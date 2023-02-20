@@ -43,17 +43,9 @@ void heapsort(int arr[], int size)
     }
 }
 
-// This function prints the sorted array
-void printArray(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
-}
-
 // Driver code
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    heapsort(UNSORTED_ARRAY, n - 1);
+    heapsort(UNSORTED_ARRAY, n);
     return 0;
 }

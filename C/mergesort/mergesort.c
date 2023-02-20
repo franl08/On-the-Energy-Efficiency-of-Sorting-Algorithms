@@ -63,6 +63,6 @@ void mergesort(int arr[], int size)
 
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    mergesort(UNSORTED_ARRAY, n - 1);
+    mergesort(UNSORTED_ARRAY, n);
     return 0;
 }
