@@ -8,10 +8,8 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [x] C
 - [ ] Chapel
 - [x] C++
-- [ ] C#
-    - Add the array
-    - Create classes for the algoritms and add a main
-    - Complete with the rest of algoritms
+- [x] C#
+    - `strandsort`needs revision, because of the lists
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
@@ -35,5 +33,7 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] Smalltalk
 - [x] Swift 
 
-`11/27` languages done
+`12/27` languages done
+
+> N atual : `10 000` com *seed* `10` 
 
