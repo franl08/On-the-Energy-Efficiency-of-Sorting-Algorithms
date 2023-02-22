@@ -9,6 +9,9 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] Chapel
 - [x] C++
 - [ ] C#
+    - Add the array
+    - Create classes for the algoritms and add a main
+    - Complete with the rest of algoritms
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
