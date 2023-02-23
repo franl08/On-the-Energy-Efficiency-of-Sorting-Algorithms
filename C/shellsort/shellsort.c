@@ -24,6 +24,6 @@ void shellSort(int arr[], int size)
 // Driver code
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    quicksort(UNSORTED_ARRAY, n);
+    shellSort(UNSORTED_ARRAY, n);
     return 0;
 }
