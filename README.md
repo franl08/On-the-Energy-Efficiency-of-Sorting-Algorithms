@@ -5,35 +5,34 @@
 List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
 - [ ] Ada
-- [x] C
+- [X] C
 - [ ] Chapel
-- [x] C++
-- [x] C#
-    - `strandsort`needs revision, because of the lists
+- [X] C++
+- [X] C#
+  - `strandsort`needs revision, because of the lists
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
 - [ ] F#
-- [x] Go
-- [x] Haskell 
-- [x] Java
-- [x] Javascript
+- [X] Go
+- [X] Haskell
+- [X] Java
+- [X] Javascript
 - [ ] Julia
-- [x] Kotlin
+- [X] Kotlin
 - [ ] Lisp
 - [ ] Lua
 - [ ] OCaml
 - [ ] Pascal
-- [ ] Perl 
-- [ ] PHP
-- [x] Python 
+- [ ] Perl
+- [X] PHP
+- [X] Python
 - [ ] Racket
-- [x] Ruby
-- [x] Rust 
+- [X] Ruby
+- [X] Rust
 - [ ] Smalltalk
-- [x] Swift 
+- [X] Swift
 
-`12/27` languages done
+`13/27` languages done
 
-> N atual : `10 000` com *seed* `10` 
-
+> N atual : `10 000` com *seed* `10`
