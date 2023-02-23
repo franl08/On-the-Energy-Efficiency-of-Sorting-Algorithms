@@ -10,13 +10,37 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include <sensors/sensors.h>
 #include "rapl.h"
 
 #define RUNTIME
 
 
 int main (int argc, char **argv) 
-{ char command[500],res[500];
+{ 
+  // initialize the sensors
+  sensors_init(NULL);
+
+  const sensors_chip_name *chip;
+  int a = 0;
+  while ((chip = sensors_get_detected_chips(NULL, &a)) != NULL) {
+    if (strstr(chip->prefix, "coretemp")) {
+      break;
+    }
+  }
+
+  const sensors_feature *feature;
+  a = 0;
+  while ((feature = sensors_get_features(chip, &a)) != NULL) {
+    if (feature->type == SENSORS_FEATURE_TEMP && feature->number == 1) {
+      break;
+    }
+  }
+  
+
+  double temp;
+
+  char command[500],res[500];
   int  ntimes = 1;
   int  core = 0;
   int  i=0;
@@ -56,7 +80,11 @@ int main (int argc, char **argv)
 
   
   for (i = 0 ; i < ntimes ; i++)
-    {   sleep(1);                                    // sleep 1 second
+    {   //sleep(1);                                    // sleep 1 second
+        sensors_get_value(chip, feature->number, &temp);
+        while (temp != 0) {
+          sensors_get_value(chip, feature->number, &temp);
+        }
         fprintf(fp,"%s , ",argv[1]);
         rapl_before(fp,core);
       
@@ -86,6 +114,8 @@ int main (int argc, char **argv)
   fclose(fp);
   fflush(stdout);
 
+  // sensors cleanup
+  sensors_cleanup();
   return 0;
 }
 
