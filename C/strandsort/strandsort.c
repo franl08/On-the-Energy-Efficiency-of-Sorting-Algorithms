@@ -75,6 +75,6 @@ void strandsort(int* arr, int len)
 // Driver code
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    quicksort(UNSORTED_ARRAY, n);
+    strandsort(UNSORTED_ARRAY, n);
     return 0;
 }

@@ -24,6 +24,6 @@ void insertionSort(int arr[], int size)
 // Driver code
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    heapsort(UNSORTED_ARRAY, n);
+    insertionSort(UNSORTED_ARRAY, n);
     return 0;
 }

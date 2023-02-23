@@ -63,6 +63,6 @@ void treeSort(int arr[], int size)
 // Driver code
 int main() {
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
-    timsort(UNSORTED_ARRAY, n);
+    treeSort(UNSORTED_ARRAY, n);
     return 0;
 }

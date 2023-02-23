@@ -1,4 +1,4 @@
-fn quicksort<T: Ord>(arr: &mut [T]) {
+fn quicksort<T: Ord + Copy>(arr: &mut [T]) {
     let n = arr.len();
     if n <= 1 {
         return;

@@ -32,7 +32,7 @@ int main (int argc, char **argv)
   FILE * fp;
 
   // printf("Program to be executed: %d",argc);
-  //strcpy( command, "./" );
+  // strcpy( command, "./" );
  strcat(command,argv[1]);
  printf("Program to be executed: %s\n",argv[1]);
 

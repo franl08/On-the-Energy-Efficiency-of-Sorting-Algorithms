@@ -1,4 +1,4 @@
-fn timsort<T: Ord>(arr: &mut [T]) {
+fn timsort<T: Ord + Copy>(arr: &mut [T]) {
     let min_merge_size = 32;
     let n = arr.len();
 
