@@ -4,14 +4,14 @@
 
 List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
-- [X] C (*scripts feitos*)
-- [X] C++ (**)
+- [X] C (*scripts* feitos)
+- [X] C++ (*scripts* feitos)
 - [X] C# (*scripts feitos*)
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
 - [ ] F#
-- [X] Go
+- [X] Go (*scripts* feitos)
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
     - Shell Sort;
@@ -30,8 +30,8 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Python (**código tem bugs**)
   - Bug "maximum recursion depth exceeded" in Tim Sort. 
 - [X] Ruby (*script* feito)
-- [X] Rust (*scripts feitos*)
-- [X] Swift
+- [X] Rust (*scripts* feitos)
+- [X] Swift (*scripts* feitos)
 
 `13/22` languages done
 
