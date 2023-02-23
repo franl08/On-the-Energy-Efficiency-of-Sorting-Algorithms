@@ -16,6 +16,10 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] F#
 - [X] Go
 - [X] Haskell
+  - Bugs in:
+    - Shell Sort;
+    - Odd Even Sort;
+    - Tim Sort.
 - [X] Java
 - [X] Javascript
 - [ ] Julia
@@ -30,6 +34,8 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] Racket
 - [X] Ruby
 - [X] Rust
+  - Bugs in:
+    - Strand Sort.
 - [ ] Smalltalk
 - [X] Swift
 
