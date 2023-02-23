@@ -3,47 +3,65 @@ using System;
 class StrandSort{
     public static int[] strandSort(int[] arr)
     {
-        if (arr.Length <= 1)
-            return arr;
+        List<int> sorted = new List<int>();
 
-        List<int> sublist = new List<int>();
-        int i = 0;
-
-        while (i < arr.Length)
+        while (arr.Length > 0)
         {
-            int min = arr[i];
-            int j = i + 1;
-            while (j < arr.Length)
+            int index = 0;
+            List<int> sublist = new List<int>();
+            sublist.Add(arr[index]);
+            arr = RemoveAtIndex(arr, index);
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[j] < min)
+                if (arr[i] > sublist[sublist.Count - 1])
                 {
-                    min = arr[j];
-                    sublist.Add(arr[j]);
-                    arr[j] = arr[i];
+                    sublist.Add(arr[i]);
+                    arr = RemoveAtIndex(arr, i);
+                    i--;
+                }
+            }
+
+            while (sublist.Count > 0)
+            {
+                int i = 0;
+                bool inserted = false;
+
+                while (i < sorted.Count && !inserted)
+                {
+                    if (sublist[0] < sorted[i])
+                    {
+                        sorted.Insert(i, sublist[0]);
+                        sublist.RemoveAt(0);
+                        inserted = true;
+                    }
                     i++;
                 }
-                else
+
+                if (!inserted)
                 {
-                    j++;
+                    sorted.AddRange(sublist);
+                    sublist.Clear();
                 }
             }
-            sublist.Add(arr[i]);
-            i++;
-            int[] temp = arr;
-            arr = new int[temp.Length - sublist.Count];
-            Array.Copy(temp, 0, arr, 0, i);
-            Array.Copy(temp, i, arr, i - sublist.Count, temp.Length - i);
-            i = 0;
-            foreach (int element in sublist)
-            {
-                arr[i] = element;
-                i++;
-            }
-            sublist.Clear();
         }
 
-        return arr;
+        return sorted.ToArray();
     }
+
+    private static int[] RemoveAtIndex(int[] arr, int index)
+    {
+        int[] result = new int[arr.Length - 1];
+        for (int i = 0, j = 0; i < arr.Length; i++)
+        {
+            if (i != index)
+            {
+                result[j++] = arr[i];
+            }
+        }
+        return result;
+    }
+
 
     public static void Main()
     {
