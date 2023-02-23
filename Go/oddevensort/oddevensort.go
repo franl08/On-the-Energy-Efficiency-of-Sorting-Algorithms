@@ -1,3 +1,5 @@
+package main
+
 func OddEvenSort(arr []int) []int {
     n := len(arr)
     sorted := false

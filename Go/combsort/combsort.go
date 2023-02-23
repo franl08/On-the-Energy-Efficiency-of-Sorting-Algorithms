@@ -1,3 +1,5 @@
+package main
+
 func CombSort(arr []int) []int {
     n := len(arr)
     gap := n

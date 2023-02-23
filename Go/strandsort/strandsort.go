@@ -1,3 +1,5 @@
+package main
+
 func StrandSort(arr []int) []int {
     if len(arr) <= 1 {
         return arr

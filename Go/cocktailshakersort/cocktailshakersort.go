@@ -1,3 +1,5 @@
+package main
+
 func CocktailShakerSort(arr []int) []int {
     left := 0
     right := len(arr) - 1

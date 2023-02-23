@@ -1,3 +1,5 @@
+package main
+
 func GnomeSort(arr []int) []int {
     i := 0
 

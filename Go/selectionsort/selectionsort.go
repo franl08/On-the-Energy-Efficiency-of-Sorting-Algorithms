@@ -1,3 +1,5 @@
+package main
+
 func SelectionSort(arr []int) {
     for i := 0; i < len(arr)-1; i++ {
         minIndex := i

@@ -1,3 +1,5 @@
+package main
+
 func ShellSort(arr []int) {
     n := len(arr)
     gap := n / 2

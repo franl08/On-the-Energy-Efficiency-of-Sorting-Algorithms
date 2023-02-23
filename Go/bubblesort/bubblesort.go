@@ -1,3 +1,5 @@
+package main
+
 func BubbleSort(arr []int) {
     n := len(arr)
     for i := 0; i < n-1; i++ {

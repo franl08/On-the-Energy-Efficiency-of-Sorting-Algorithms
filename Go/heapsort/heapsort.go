@@ -1,3 +1,5 @@
+package main
+
 func HeapSort(arr []int) {
     n := len(arr)
 

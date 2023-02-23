@@ -1,3 +1,5 @@
+package main
+
 func CycleSort(arr []int) {
     n := len(arr)
     for cycleStart := 0; cycleStart < n-1; cycleStart++ {

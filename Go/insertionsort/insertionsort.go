@@ -1,3 +1,5 @@
+package main
+
 func InsertionSort(arr []int) {
     for i := 1; i < len(arr); i++ {
         key := arr[i]
