@@ -19,9 +19,10 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
     - Tim Sort.
 - [X] Java (**codigo tem bugs**)
   - "code too large"
-- [X] Javascript
+- [X] Javascript (*scripts* feitos)
 - [ ] Julia
-- [X] Kotlin
+- [X] Kotlin (**código tem bugs**)
+  - Mesmo que Java
 - [ ] Lisp
 - [ ] Lua
 - [ ] Pascal
