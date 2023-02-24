@@ -1,5 +1,5 @@
 function strandSort(arr) {
-  const sortedArr = [];
+  let sortedArr = [];
 
   while (arr.length > 0) {
     let subArr = [arr[0]];
@@ -25,7 +25,7 @@ function strandSort(arr) {
     if (i === sortedArr.length - 1) {
       result.push(sortedArr[i]);
     }
-    sortedArr = result;
+    sortedArr = [...result];
   }
 
   return sortedArr[0];
@@ -813,4 +813,4 @@ const arr = [
   2788, 2294, 9448, 544, 3661, 1163, 5319, 7812, 5052, 8363, 4913, 3321, 9600,
   8433, 2067, 1338, 278, 9348, 8396, 4658, 8418, 7025, 1741, 9346, 9427, 388,
 ];
-const sortedArr = strandSort(arr);
+const sorted = strandSort(arr);
