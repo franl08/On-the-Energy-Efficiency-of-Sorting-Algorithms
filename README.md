@@ -10,7 +10,7 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
-- [ ] F#
+- [X] F#
 - [X] Go (*scripts* feitos)
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
@@ -20,21 +20,21 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Java (**codigo tem bugs**)
   - "code too large"
 - [X] Javascript (*scripts* feitos)
-- [ ] Julia
+- [X] Julia
 - [X] Kotlin (**código tem bugs**)
   - Mesmo que Java
 - [ ] Lisp
-- [ ] Lua
+- [X] Lua
 - [ ] Pascal
-- [ ] Perl
+- [X] Perl
 - [X] PHP
 - [X] Python (**código tem bugs**)
-  - Bug "maximum recursion depth exceeded" in Tim Sort. 
+  - Bug "maximum recursion depth exceeded" in Tim Sort.
 - [X] Ruby (*script* feito)
 - [X] Rust (*scripts* feitos)
 - [X] Swift (*scripts* feitos)
 
-`13/22` languages done
+`1/22` languages done
 
 > N atual : `10 000` com *seed* `10`
 
