@@ -34,7 +34,7 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Rust (*scripts* feitos)
 - [X] Swift (*scripts* feitos)
 
-`1/22` languages done
+`17/22` languages done
 
 > N atual : `10 000` com *seed* `10`
 
