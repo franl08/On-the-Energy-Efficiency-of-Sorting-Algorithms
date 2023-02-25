@@ -2,7 +2,7 @@
 
 ## LIST OF ALL LANGUAGES TO STUDY
 
-List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
+List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
 - [X] C (*scripts* feitos)
 - [X] C++ (*scripts* feitos)
@@ -27,7 +27,8 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Lua
 - [ ] Pascal
 - [X] Perl
-- [X] PHP
+- [X] PHP (**codigo tem bugs**)
+  - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
 - [X] Python (**código tem bugs**)
   - Bug "maximum recursion depth exceeded" in Tim Sort.
 - [X] Ruby (*script* feito)
