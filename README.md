@@ -11,7 +11,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [ ] Erlang
 - [ ] Fortran
 - [X] F#
-- [X] Go (*scripts* feitos)
+- [X] Go (*scripts* feitos e testado)
+  - TimSort doesn't work.
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
     - Gnome Sort;
