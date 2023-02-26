@@ -38,7 +38,11 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] PHP (**codigo tem bugs**)
   - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
 - [X] Ruby (*script* feito)
-- [X] Rust (*scripts* feitos)
+- [X] Rust (*scripts* feitos e testado)
+  - Bugs in:
+    - Quick Sort;
+    - Strand Sort;
+    - Tim Sort.
 - [X] Swift (*scripts* feitos)
 
 `17/22` languages done
