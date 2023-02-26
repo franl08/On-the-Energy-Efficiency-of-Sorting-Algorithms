@@ -14,9 +14,8 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Go (*scripts* feitos)
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
-    - Shell Sort;
-    - Odd Even Sort;
-    - Tim Sort.
+    - Gnome Sort;
+    - Comb Sort,
 - [X] Java (**codigo tem bugs**)
   - "code too large"
 - [X] Javascript (*scripts* feitos)
@@ -28,8 +27,7 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [ ] Pascal
 - [X] Perl
 - [X] PHP
-- [X] Python (**código tem bugs**)
-  - Bug "maximum recursion depth exceeded" in Tim Sort.
+- [X] Python (scripts feitos e testado)
 - [X] Ruby (*script* feito)
 - [X] Rust (*scripts* feitos)
 - [X] Swift (*scripts* feitos)
