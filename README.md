@@ -5,10 +5,11 @@
 List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
 - [X] C (*scripts* feitos)
-- [X] C++ (*scripts* feitos)
-- [X] C# (**codigo tem bugs**)
-  - Bugs in:
-    - Strand Sort;
+- [X] C++ (*scripts* feitos e testado)
+    - TimSort doesn't work.
+- [X] C# (*scripts feitos*)
+    - Bugs in:
+      - Strand Sort;
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
