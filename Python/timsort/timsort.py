@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def timsort(arr):
     min_run = 32
