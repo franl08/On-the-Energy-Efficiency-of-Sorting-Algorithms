@@ -8,6 +8,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C++ (*scripts* feitos e testado)
     - TimSort doesn't work.
 - [X] C# (*scripts feitos*)
+    - Bugs in:
+      - Strand Sort;
 - [ ] Dart
 - [ ] Erlang
 - [ ] Fortran
