@@ -20,7 +20,11 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Java (**codigo tem bugs**)
   - "code too large"
 - [X] Javascript (*scripts* feitos)
-- [X] Julia
+- [X] Julia (**codigo tem bugs**)
+  - Bugs in:
+      - Quick sort;
+      - Strand sort;
+      - Tree sort.
 - [X] Kotlin (**código tem bugs**)
   - Mesmo que Java
 - [ ] Lisp
