@@ -36,7 +36,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [ ] Pascal
 - [X] Perl (testado; **mas falta scripts de teste**)
     - strandsort não dá sort direito
-    - quicksort com cocktailsort na main
 - [X] Python (scripts feitos e testado)
 - [X] PHP (**codigo tem bugs**)
   - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
