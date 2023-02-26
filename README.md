@@ -22,7 +22,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
     - Comb Sort,
 - [X] Java (**codigo tem bugs**)
   - "code too large"
-- [X] Javascript (*scripts* feitos)
+- [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
+    - combsort deu mal
 - [X] Julia (**codigo tem bugs**)
   - Bugs in:
       - Quick sort;
@@ -33,11 +34,15 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [ ] Lisp
 - [X] Lua (*script* feito)
 - [ ] Pascal
-- [X] Perl
+- [X] Perl (testado; **mas falta scripts de teste**)
+    - strandsort não dá sort direito
+    - quicksort com cocktailsort na main
 - [X] Python (scripts feitos e testado)
 - [X] PHP (**codigo tem bugs**)
   - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
-- [X] Ruby (*script* feito)
+- [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
+    - Strandosrt deu mal
+    - combsort deu mal
 - [X] Rust (*scripts* feitos e testado)
   - Bugs in:
     - Quick Sort;
