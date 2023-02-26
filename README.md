@@ -28,7 +28,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Kotlin (**código tem bugs**)
   - Mesmo que Java
 - [ ] Lisp
-- [X] Lua
+- [X] Lua (*script* feito)
 - [ ] Pascal
 - [X] Perl
 - [X] Python (scripts feitos e testado)
