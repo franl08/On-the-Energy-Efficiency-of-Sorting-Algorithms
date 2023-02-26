@@ -4,6 +4,6 @@ dir_to_process="."
 
 for dir in "$dir_to_process"/*/; do
   cd "$dir"
-  mono *.exe
+  php *.php
   cd ".."
 done

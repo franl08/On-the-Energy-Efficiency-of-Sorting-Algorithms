@@ -2,7 +2,7 @@
 
 ## LIST OF ALL LANGUAGES TO STUDY
 
-List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
+List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
 - [X] C (*scripts* feitos)
 - [X] C++ (*scripts* feitos)
@@ -19,15 +19,20 @@ List contains the 27 languages from the *23.02 Benchmarks Game* Study (https://b
 - [X] Java (**codigo tem bugs**)
   - "code too large"
 - [X] Javascript (*scripts* feitos)
-- [X] Julia
+- [X] Julia (**codigo tem bugs**)
+  - Bugs in:
+      - Quick sort;
+      - Strand sort;
+      - Tree sort.
 - [X] Kotlin (**código tem bugs**)
   - Mesmo que Java
 - [ ] Lisp
 - [X] Lua
 - [ ] Pascal
 - [X] Perl
-- [X] PHP
 - [X] Python (scripts feitos e testado)
+- [X] PHP (**codigo tem bugs**)
+  - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
 - [X] Ruby (*script* feito)
 - [X] Rust (*scripts* feitos)
 - [X] Swift (*scripts* feitos)
