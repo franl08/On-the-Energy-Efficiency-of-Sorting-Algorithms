@@ -10,9 +10,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C# (*scripts feitos* e testado)
     - Bugs in:
       - Strand Sort;
-- [ ] Dart
-- [ ] Erlang
-- [ ] Fortran
 - [X] F#
 - [X] Go (*scripts* feitos e testado)
   - TimSort doesn't work.
@@ -31,9 +28,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
       - Tree sort.
 - [X] Kotlin (**código tem bugs**)
   - Mesmo que Java
-- [ ] Lisp
 - [X] Lua (*script* feito)
-- [ ] Pascal
 - [X] Perl (testado; **mas falta scripts de teste**)
     - strandsort não dá sort direito
 - [X] Python (scripts feitos e testado)
@@ -49,7 +44,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
     - Tim Sort.
 - [X] Swift (*scripts* feitos)
 
-`17/22` languages done
+`17` languages done
 
 > N atual : `10 000` com *seed* `10`
 
