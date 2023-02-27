@@ -16,16 +16,12 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
     - Gnome Sort;
-- [X] Java (**codigo tem bugs**)
-  - "code too large"
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
 - [X] Julia (**codigo tem bugs**)
   - Bugs in:
       - Quick sort;
       - Strand sort;
       - Tree sort.
-- [X] Kotlin (**código tem bugs**)
-  - Mesmo que Java
 - [X] Lua (*script* feito)
 - [X] Perl (testado; **mas falta scripts de teste**)
     - strandsort não dá sort direito
@@ -51,3 +47,9 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
   - 25 000
   - 250 000
   - 1 000 000
+
+
+------------
+
+- [X] Java e Kotlin
+  - "code too large" :(
