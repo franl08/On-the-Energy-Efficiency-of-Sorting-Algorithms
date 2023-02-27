@@ -4,7 +4,9 @@
 
 List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
-- [X] C (*scripts* feitos)
+- [X] C (*scripts* feitos e testado)
+    - Bugs in:
+      - Tree Sort;
 - [X] C++ (*scripts* feitos e testado)
 - [X] C# (*scripts feitos* e testado)
     - Bugs in:

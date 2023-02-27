@@ -41,7 +41,13 @@ void quicksort(int arr[], int low, int high)
 
 // Driver code
 int main() {
+    int debug = 1;
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
     quicksort(UNSORTED_ARRAY, 0, n - 1);
+    if (debug) {
+        for (int i = 0; i < n; i++) {
+            printf("%d ", UNSORTED_ARRAY[i]);
+        }
+    }
     return 0;
 }

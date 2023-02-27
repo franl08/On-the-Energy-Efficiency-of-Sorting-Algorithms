@@ -62,7 +62,13 @@ void treeSort(int arr[], int size)
 
 // Driver code
 int main() {
+    int debug = 1;
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
     treeSort(UNSORTED_ARRAY, n);
+    if (debug) {
+        for (int i = 0; i < n; i++) {
+            printf("%d ", UNSORTED_ARRAY[i]);
+        }
+    }
     return 0;
 }

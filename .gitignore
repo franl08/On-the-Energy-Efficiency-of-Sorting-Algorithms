@@ -1,1 +1,15 @@
 *.exe
+*/bubblesort/bubblesort
+*/cocktailshakersort/cocktailshakersort
+*/combsort/combsort
+*/cyclesort/cyclesort
+*/gnomesort/gnomesort
+*/heapsort/heapsort
+*/insertionsort/insertionsort
+*/mergesort/mergesort
+*/oddevensort/oddevensort
+*/quicksort/quicksort
+*/selectionsort/selectionsort
+*/shellsort/shellsort
+*/strandsort/strandsort
+*/treesort/treesort
