@@ -16,11 +16,9 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
     - Gnome Sort;
-    - Comb Sort,
 - [X] Java (**codigo tem bugs**)
   - "code too large"
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
-    - combsort deu mal
 - [X] Julia (**codigo tem bugs**)
   - Bugs in:
       - Quick sort;
@@ -35,7 +33,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] PHP (*script* feito)
 - [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
     - Strandosrt deu mal
-    - combsort deu mal
 - [X] Rust (*scripts* feitos e testado)
   - Bugs in:
     - Quick Sort;
