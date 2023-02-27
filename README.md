@@ -6,13 +6,11 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 - [X] C (*scripts* feitos)
 - [X] C++ (*scripts* feitos e testado)
-    - TimSort doesn't work.
 - [X] C# (*scripts feitos* e testado)
     - Bugs in:
       - Strand Sort;
 - [X] F#
 - [X] Go (*scripts* feitos e testado)
-  - TimSort doesn't work.
 - [X] Haskell (**codigo tem bugs**)
   - Bugs in:
     - Gnome Sort;
@@ -32,8 +30,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Perl (testado; **mas falta scripts de teste**)
     - strandsort não dá sort direito
 - [X] Python (scripts feitos e testado)
-- [X] PHP (**codigo tem bugs**)
-  - Tim Sort só funciona se der print do array. Senão dá o warning das keys.
+- [X] PHP (*script* feito)
 - [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
     - Strandosrt deu mal
     - combsort deu mal
@@ -41,7 +38,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
   - Bugs in:
     - Quick Sort;
     - Strand Sort;
-    - Tim Sort.
 - [X] Swift (*scripts* feitos)
 
 `17` languages done
