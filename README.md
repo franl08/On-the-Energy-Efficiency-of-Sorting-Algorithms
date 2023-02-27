@@ -13,10 +13,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
   - Bugs in:
     - Gnome Sort;
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
-- [X] Julia (**codigo tem bugs**)
-  - Bugs in:
-      - Quick sort;
-- [X] Lua (*script* feito)
+- [X] Julia (**falta scripts**)
+- [X] Lua (**falta scripts**)
 - [X] Perl (scripts feitos e testado)
 - [X] Python (scripts feitos e testado)
 - [X] PHP (*script* feito)
