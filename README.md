@@ -5,8 +5,6 @@
 List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
 - [X] C (*scripts* feitos e testado)
-    - Bugs in:
-      - Tree Sort;
 - [X] C++ (*scripts* feitos e testado)
 - [X] C# (*scripts feitos* e testado)
 - [X] F#
@@ -18,7 +16,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Julia (**codigo tem bugs**)
   - Bugs in:
       - Quick sort;
-      - Tree sort.
 - [X] Lua (*script* feito)
 - [X] Perl (testado; **mas falta scripts de teste**)
 - [X] Python (scripts feitos e testado)
