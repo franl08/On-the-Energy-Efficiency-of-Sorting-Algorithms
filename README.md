@@ -14,7 +14,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
     - Gnome Sort;
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
 - [X] Julia (**falta scripts**)
-- [X] Lua (**falta scripts**)
+- [X] Lua (scripts feitos e testado)
 - [X] Perl (scripts feitos e testado)
 - [X] Python (scripts feitos e testado)
 - [X] PHP (*script* feito)
