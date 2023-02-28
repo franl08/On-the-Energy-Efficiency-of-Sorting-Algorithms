@@ -24,7 +24,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
     - Quick Sort;
 - [X] Swift (*scripts* feitos)
 
-`17` languages done
+`15` languages done
 
 > N atual : `10 000` com *seed* `10`
 
