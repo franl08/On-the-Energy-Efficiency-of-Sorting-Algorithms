@@ -20,8 +20,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] PHP (*script* feito)
 - [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
 - [X] Rust (*scripts* feitos e testado)
-  - Bugs in:
-    - Quick Sort;
 - [X] Swift (*scripts* feitos)
 
 `15` languages done
