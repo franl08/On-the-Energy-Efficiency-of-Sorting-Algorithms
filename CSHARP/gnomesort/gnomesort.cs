@@ -2,7 +2,7 @@ using System;
 
 class GnomeSort{
 
-    public static bool debug = true;
+    public static bool debug = false;
 
     public static void gnomeSort(int[] arr)
     {

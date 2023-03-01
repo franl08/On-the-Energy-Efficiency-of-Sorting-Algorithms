@@ -540,7 +540,7 @@
         // Call the gnomeSort function
 
         $sorted_arr=gnomeSort($arr);
-        $debug = true;
+        $debug = false;
         if ($debug) {
             print_r($sorted_arr);
         }

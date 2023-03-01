@@ -805,7 +805,7 @@ const arr = [
 ];
 const sortedArr = cocktailShakerSort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

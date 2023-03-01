@@ -554,7 +554,7 @@
       // Call the quickSort function
 
       $sorted_arr=quickSort($arr);
-      $debug = true;
+      $debug = false;
       if ($debug) {
         print_r($sorted_arr);
       }

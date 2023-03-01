@@ -26,7 +26,7 @@ arr = [9361, 533, 7026, 7906, 9471, 243, 3376, 7578, 8049, 4546, 2625, 563, 8530
 
 sorted_arr = quick_sort(arr)
 
-debug = true
+debug = false
 if debug
     println(sorted_arr)
 end

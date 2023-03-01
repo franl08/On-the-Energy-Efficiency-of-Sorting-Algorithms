@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def quicksort(arr):
     if len(arr) <= 1:

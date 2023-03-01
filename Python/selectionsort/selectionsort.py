@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def selection_sort(arr):
     n = len(arr)

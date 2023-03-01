@@ -2,7 +2,7 @@ using System;
 
 class InsertionSort{   
 
-    public static bool debug = true;
+    public static bool debug = false;
 
     public static void insertionSort(int[] array)
     {

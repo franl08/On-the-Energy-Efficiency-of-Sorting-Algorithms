@@ -2,7 +2,7 @@ using System;
 
 class MergeSort{
 
-    public static bool debug = true;
+    public static bool debug = false;
 
     public static void mergeSort(int[] array)
     {

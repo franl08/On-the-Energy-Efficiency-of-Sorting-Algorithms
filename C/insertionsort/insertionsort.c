@@ -23,7 +23,7 @@ void insertionSort(int arr[], int size)
 
 // Driver code
 int main() {
-    int debug = 1;
+    int debug = 0;
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
     insertionSort(UNSORTED_ARRAY, n);
     if (debug) {

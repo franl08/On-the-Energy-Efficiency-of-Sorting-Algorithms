@@ -793,7 +793,7 @@ const arr = [
 ];
 const sortedArr = oddEvenSort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

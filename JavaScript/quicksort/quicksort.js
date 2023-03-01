@@ -790,7 +790,7 @@ const arr = [
 ];
 const sortedArr = quicksort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

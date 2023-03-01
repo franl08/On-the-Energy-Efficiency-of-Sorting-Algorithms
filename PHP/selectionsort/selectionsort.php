@@ -544,7 +544,7 @@
       // Call the selectionSort function
 
       $sorted_arr=selectionSort($arr);
-      $debug = true;
+      $debug = false;
       if ($debug) {
         print_r($sorted_arr);
       }

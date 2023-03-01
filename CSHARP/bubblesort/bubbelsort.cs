@@ -2,7 +2,7 @@ using System;
 
 class BubbleSort{
 
-    public static bool debug = true;
+    public static bool debug = false;
 
     public static void bubbleSort(int[] array)
     {

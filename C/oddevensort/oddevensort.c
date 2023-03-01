@@ -35,7 +35,7 @@ void oddEvenSort(int* arr, int n)
 
 // Driver code
 int main() {
-    int debug = 1;
+    int debug = 0;
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
     oddEvenSort(UNSORTED_ARRAY, n);
     if (debug) {

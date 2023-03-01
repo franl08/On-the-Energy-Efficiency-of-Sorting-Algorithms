@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def odd_even_sort(arr):
     n = len(arr)

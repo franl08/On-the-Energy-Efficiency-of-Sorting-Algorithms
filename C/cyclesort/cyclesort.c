@@ -42,7 +42,7 @@ void cycleSort(int arr[], int size)
 
 // Driver code
 int main() {
-    int debug = 1;
+    int debug = 0;
     int n = sizeof(UNSORTED_ARRAY)/sizeof(UNSORTED_ARRAY[0]);
     cycleSort(UNSORTED_ARRAY, n);
     if (debug) {

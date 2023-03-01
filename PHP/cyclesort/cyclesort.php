@@ -565,7 +565,7 @@
       8418, 7025, 1741, 9346, 9427, 388); 
       
       $sorted_arr=cycleSort($arr);
-      $debug = true;
+      $debug = false;
       if ($debug) {
         print_r($sorted_arr);
       }

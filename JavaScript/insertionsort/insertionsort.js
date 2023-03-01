@@ -783,7 +783,7 @@ const arr = [
 ];
 const sortedArr = insertionSort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

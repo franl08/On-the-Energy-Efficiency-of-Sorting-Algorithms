@@ -785,7 +785,7 @@ const arr = [
 ];
 const sortedArr = selectionSort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

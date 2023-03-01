@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def gnome_sort(arr):
     i = 0

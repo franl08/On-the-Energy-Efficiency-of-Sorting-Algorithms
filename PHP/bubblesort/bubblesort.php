@@ -21,7 +21,7 @@
   // Call the bubbleSort function
   $sorted_arr = bubbleSort($arr);
 
-  $debug = true;
+  $debug = false;
   if ($debug) {
     print_r($sorted_arr);
   }

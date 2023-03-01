@@ -2,7 +2,7 @@ using System;
 
 class ShellSort{
 
-    public static bool debug = true;
+    public static bool debug = false;
 
     public static void shellSort(int[] array)
     {

@@ -791,7 +791,7 @@ const arr = [
 ];
 const sortedArr = gnomeSort(arr);
 
-let debug = true;
+let debug = false;
 if (debug) {
   sortedArr.forEach((element) => {
     console.log(`${element}`);

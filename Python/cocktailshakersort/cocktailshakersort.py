@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def cocktail_shaker_sort(arr):
     n = len(arr)

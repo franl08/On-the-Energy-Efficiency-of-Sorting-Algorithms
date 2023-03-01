@@ -1,4 +1,4 @@
-debug = True
+debug = False
 
 def shell_sort(arr):
     n = len(arr)
