@@ -14,7 +14,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Lua (scripts feitos e testado)
 - [X] Perl (scripts feitos e testado)
 - [X] Python (scripts feitos e testado)
-- [X] PHP (*script* feito)
+- [X] PHP (*script* feito e testado)
 - [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
 - [X] Rust (*scripts* feitos e testado)
 - [X] Swift (*scripts* feitos e testado)
