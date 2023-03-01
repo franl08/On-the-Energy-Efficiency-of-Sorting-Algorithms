@@ -536,6 +536,10 @@
           // Call the shellSort function
 
           $sorted_arr=shellSort($arr);
+          $debug = true;
+          if ($debug) {
+            print_r($sorted_arr);
+          }
 
 
 ?>

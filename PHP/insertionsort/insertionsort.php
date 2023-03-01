@@ -535,6 +535,10 @@
         // Call the insertionSort function
 
         $sorted_arr=insertionSort($arr);
+        $debug = true;
+        if ($debug) {
+            print_r($sorted_arr);
+        }
 
 
 

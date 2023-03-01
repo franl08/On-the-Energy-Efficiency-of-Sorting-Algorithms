@@ -571,5 +571,9 @@
       // Call the mergeSort function
 
       $sorted_arr=mergeSort($arr);
+      $debug = true;
+      if ($debug) {
+        print_r($sorted_arr);
+      }
 
 ?>

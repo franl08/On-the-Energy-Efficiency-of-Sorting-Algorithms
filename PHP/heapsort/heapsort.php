@@ -557,5 +557,9 @@
     // Call the heapSort function
 
     $sorted_arr=heapSort($arr);
+    $debug = true;
+    if ($debug) {
+      print_r($sorted_arr);
+    }
 
 ?>

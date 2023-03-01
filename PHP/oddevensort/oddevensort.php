@@ -552,5 +552,9 @@
       // Call the oddEvenSort function
 
       $sorted_arr=oddEvenSort($arr);
+      $debug = true;
+      if ($debug) {
+        print_r($sorted_arr);
+      }
 
 ?>

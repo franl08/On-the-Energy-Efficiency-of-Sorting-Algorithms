@@ -566,6 +566,10 @@
 
         // Call the bubbleSort function
         $sorted_arr = cocktailShakerSort($arr);
+        $debug = true;
+        if ($debug) {
+            print_r($sorted_arr);
+        }
 
         
 ?>
