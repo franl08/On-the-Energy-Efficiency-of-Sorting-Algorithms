@@ -58,3 +58,7 @@
 */shellsort/shellsort.o
 */strandsort/strandsort.o
 */treesort/treesort.o
+
+RAPL/main
+RAPL/main.o
+RAPL/rapl.o

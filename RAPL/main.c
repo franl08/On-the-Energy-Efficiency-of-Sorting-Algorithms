@@ -81,8 +81,9 @@ int main (int argc, char **argv)
   
   for (i = 0 ; i < ntimes ; i++)
     {   sleep(1);                                    // sleep 1 second
-        sensors_get_value(chip, feature->number, &temp);
-        /*while (temp != 0) {
+        /*sensors_get_value(chip, feature->number, &temp);
+        while (temp > 60) {
+          //printf("%f\n", temp);
           sensors_get_value(chip, feature->number, &temp);
         }*/
         fprintf(fp,"%s , ",argv[1]);
