@@ -7,9 +7,9 @@ cd $d;
 echo "cd $d";
 #echo ${d::-1};
 if [[ "${d::-1}" != "Swift" && "${d::-1}" != "Haskell" && "${d::-1}" != "bashScripts" ]]; then
-    if [[ -f "compile.sh" ]]; then
-        echo "Compiling executables for $d."
-        bash compile.sh
+    if [[ -f "activate_debug_mode.sh" ]]; then
+        echo "Activating debug mode in $d."
+        bash activate_debug_mode.sh
     fi
 fi
 cd ..;
