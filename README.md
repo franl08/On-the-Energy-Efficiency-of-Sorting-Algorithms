@@ -9,9 +9,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C# (*scripts feitos* e testado)
 - [X] F#
 - [X] Go (*scripts* feitos e testado)
-- [X] Haskell (**codigo tem bugs**)
-  - Bugs in:
-    - Gnome Sort;
+- [X] Haskell (*scripts* feitos e testado, **mas sem debug mode**)
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
 - [X] Julia (**falta scripts**)
 - [X] Lua (scripts feitos e testado)
