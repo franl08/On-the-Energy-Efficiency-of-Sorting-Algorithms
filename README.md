@@ -7,7 +7,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C (*scripts* feitos e testado)
 - [X] C++ (*scripts* feitos e testado)
 - [X] C# (*scripts feitos* e testado)
-- [X] F#
 - [X] Go (*scripts* feitos e testado)
 - [X] Haskell (*scripts* feitos e testado)
 - [X] Javascript (*scripts* feitos e testado)
@@ -20,7 +19,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Rust (*scripts* feitos e testado)
 - [X] Swift (*scripts* feitos e testado)
 
-`15` languages done
+`14` languages done
 
 > N atual : `10 000` com *seed* `10`
 
