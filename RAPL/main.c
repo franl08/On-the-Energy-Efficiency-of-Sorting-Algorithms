@@ -80,11 +80,11 @@ int main (int argc, char **argv)
 
   
   for (i = 0 ; i < ntimes ; i++)
-    {   //sleep(1);                                    // sleep 1 second
+    {   sleep(1);                                    // sleep 1 second
         sensors_get_value(chip, feature->number, &temp);
-        while (temp != 0) {
+        /*while (temp != 0) {
           sensors_get_value(chip, feature->number, &temp);
-        }
+        }*/
         fprintf(fp,"%s , ",argv[1]);
         rapl_before(fp,core);
       
