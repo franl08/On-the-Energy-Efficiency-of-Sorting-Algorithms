@@ -781,3 +781,10 @@ const arr = [
   8433, 2067, 1338, 278, 9348, 8396, 4658, 8418, 7025, 1741, 9346, 9427, 388,
 ];
 const sortedArr = bubbleSort(arr);
+
+let debug = true;
+if (debug) {
+  sortedArr.forEach((element) => {
+    console.log(`${element}`);
+  });
+}
