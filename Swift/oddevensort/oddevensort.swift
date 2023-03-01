@@ -21,3 +21,7 @@ var unsorted = [9361, 533, 7026, 7906, 9471, 243, 3376, 7578, 8049, 4546, 2625, 
 
 oddEvenSort(&unsorted)
 
+var debug = true
+if (debug) {
+    print(unsorted)
+}

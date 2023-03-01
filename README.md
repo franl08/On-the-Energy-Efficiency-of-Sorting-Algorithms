@@ -7,11 +7,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C (*scripts* feitos e testado)
 - [X] C++ (*scripts* feitos e testado)
 - [X] C# (*scripts feitos* e testado)
-- [X] F#
 - [X] Go (*scripts* feitos e testado)
-- [X] Haskell (**codigo tem bugs**)
-  - Bugs in:
-    - Gnome Sort;
+- [X] Haskell (*scripts* feitos e testado, **mas sem debug mode**)
 - [X] Javascript (*scripts* feitos e testado; **mas falta scripts de teste**)
 - [X] Julia (**falta scripts**)
 - [X] Lua (scripts feitos e testado)
@@ -20,9 +17,9 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] PHP (*script* feito)
 - [X] Ruby (*script* feito e testado; **mas falta scripts de teste**)
 - [X] Rust (*scripts* feitos e testado)
-- [X] Swift (*scripts* feitos)
+- [X] Swift (*scripts* feitos e testado)
 
-`15` languages done
+`14` languages done
 
 > N atual : `10 000` com *seed* `10`
 
