@@ -14,20 +14,20 @@
 */strandsort/strandsort
 */treesort/treesort
 
-*/bubblesort/bubblesort.J
-*/cocktailshakersort/cocktailshakersort.J
-*/combsort/combsort.J
-*/cyclesort/cyclesort.J
-*/gnomesort/gnomesort.J
-*/heapsort/heapsort.J
-*/insertionsort/insertionsort.J
-*/mergesort/mergesort.J
-*/oddevensort/oddevensort.J
-*/quicksort/quicksort.J
-*/selectionsort/selectionsort.J
-*/shellsort/shellsort.J
-*/strandsort/strandsort.J
-*/treesort/treesort.J
+*/bubblesort/*.J
+*/cocktailshakersort/*.J
+*/combsort/*.J
+*/cyclesort/*.J
+*/gnomesort/*.J
+*/heapsort/*.J
+*/insertionsort/*.J
+*/mergesort/*.J
+*/oddevensort/*.J
+*/quicksort/*.J
+*/selectionsort/*.J
+*/shellsort/*.J
+*/strandsort/*.J
+*/treesort/*.J
 
 */bubblesort/bubblesort.hi
 */cocktailshakersort/cocktailshakersort.hi

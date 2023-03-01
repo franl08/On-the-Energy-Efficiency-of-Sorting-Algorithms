@@ -76,7 +76,7 @@ int main (int argc, char **argv)
   fp = fopen(res,"w");
   rapl_init(core);
 
-  fprintf(fp,"Program, Package , Core(s) , GPU , DRAM? , Time (sec) \n");
+  fprintf(fp,"Language, Program, Package , Core(s) , GPU , DRAM? , Time (sec) \n");
 
   
   for (i = 0 ; i < ntimes ; i++)
@@ -86,6 +86,7 @@ int main (int argc, char **argv)
           //printf("%f\n", temp);
           sensors_get_value(chip, feature->number, &temp);
         }*/
+        fprintf(fp, "%s , ",argv[3]);
         fprintf(fp,"%s , ",argv[1]);
         rapl_before(fp,core);
       
