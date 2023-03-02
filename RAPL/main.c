@@ -76,7 +76,7 @@ int main (int argc, char **argv)
   fp = fopen(res,"w");
   rapl_init(core);
 
-  fprintf(fp,"Language, Program, Package , Core(s) , GPU , DRAM? , Time (sec) \n");
+  fprintf(fp,"Language, Program, Input Size ,Package , Core(s) , GPU , DRAM? , Time (sec) \n");
 
   
   for (i = 0 ; i < ntimes ; i++)
@@ -88,6 +88,7 @@ int main (int argc, char **argv)
         }*/
         fprintf(fp, "%s , ",argv[3]);
         fprintf(fp,"%s , ",argv[1]);
+        fprintf(fp,"%s , ",argv[4]);
         rapl_before(fp,core);
       
 #ifdef RUNTIME
