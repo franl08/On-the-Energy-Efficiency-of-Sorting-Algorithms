@@ -19,7 +19,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] Rust
 - [X] Swift
 
-`14` languages ready to use
+`14` languages ready to use in the future
 `6` languages done : C, C++, C#, Go, Rust, Swift
 
 
@@ -30,10 +30,13 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
   - 1 000 000
 
 
+- We used 11 different sorting algorithms
+
+
 ------------
 
 ## Results command
 
 ```  > bash results.sh ```
 
-CSV file of the results is in directory results
+CSV file of the results is generated in directory results
