@@ -21,12 +21,9 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 `14` languages done
 
-> N atual : `10 000` com *seed* `10`
+> current N : `10 000` com *seed* `10`
 
-- Entrega: 2 de março (fim da aula)
-- Grupos: 3 alunos
-- Não é preciso relatorio
-- Tamanhos
+- Sizes
 
   - 25 000
   - 250 000
@@ -37,3 +34,9 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 - [X] Java e Kotlin
   - "code too large" :(
+
+------------
+
+## Results command
+
+```  > bash results.sh ```
