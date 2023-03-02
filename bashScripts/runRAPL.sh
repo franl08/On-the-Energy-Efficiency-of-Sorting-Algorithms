@@ -5,12 +5,11 @@ for d in */; do
     cd "$d"
     echo "cd $d"
     #echo "${d::-1}"
-    if [[ "${d::-1}" != "Swift" && "${d::-1}" != "Haskell" && "${d::-1}" != "bashScripts" && "${d::-1}" != "JavaScript" && "${d::-1}" != "Julia"  && "${d::-1}" != "Lua" && "${d::-1}" != "Perl" && "${d::-1}" != "PHP" && "${d::-1}" != "Python" && "${d::-1}" != "Ruby"]]; then
+    if [[ "${d::-1}" != "Swift" && "${d::-1}" != "Haskell" && "${d::-1}" != "bashScripts" && "${d::-1}" != "JavaScript" && "${d::-1}" != "Julia"  && "${d::-1}" != "Lua" && "${d::-1}" != "Perl" && "${d::-1}" != "PHP" && "${d::-1}" != "Python" && "${d::-1}" != "Ruby" ]]; then
         if [[ -f "runRAPL.sh" ]]; then
-            echo "Runing RAPL in $d.";
+            echo "Running RAPL in $d."
             bash runRAPL.sh
         fi
     fi
     cd ..
 done
-
