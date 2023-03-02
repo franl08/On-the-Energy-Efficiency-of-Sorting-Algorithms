@@ -1,4 +1,3 @@
-
 /*
  *  Análise e Teste de Software
  *  João Saraiva 
@@ -121,6 +120,4 @@ int main (int argc, char **argv)
   sensors_cleanup();
   return 0;
 }
-
-
 

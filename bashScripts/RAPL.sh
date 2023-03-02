@@ -5,4 +5,4 @@ cd RAPL;
 if [[ -f "rapl.o" ]]; then
     make clean;
 fi
-make
+make main;

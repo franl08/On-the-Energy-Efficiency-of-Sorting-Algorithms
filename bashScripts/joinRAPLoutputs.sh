@@ -6,7 +6,7 @@ if [[ -f "results/results.csv" ]]; then
     echo "results/results.csv deleted"
 fi
 touch results/results.csv;
-echo "Language, Program , Input Size, Package , Core(s) , GPU , DRAM? , Time (sec) " >> results/results.csv;
+echo "Language, Program, Package , Core(s) , GPU , DRAM? , Time (sec) " >> results/results.csv;
 for d in */; do 
     cd "$d"
     echo "cd $d"

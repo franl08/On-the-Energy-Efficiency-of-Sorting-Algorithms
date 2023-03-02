@@ -1,4 +1,4 @@
-Language, Program , Input Size, Package , Core(s) , GPU , DRAM? , Time (sec) 
+Language, Program, Package , Core(s) , GPU , DRAM? , Time (sec) 
 C , bubblesort , 1.749207 , 1.220581 , 0.141785 , 0.000000 ,  266031 
 C , bubblesort , 1.537659 , 1.041260 , 0.131836 , 0.000000 ,  255822 
 C , bubblesort , 2.083069 , 1.567322 , 0.141968 , 0.000000 ,  258541 
