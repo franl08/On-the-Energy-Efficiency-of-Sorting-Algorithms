@@ -1,11 +1,19 @@
 import random
 import sys
 
-output = open("array.txt", "w")
 
 n_elems = int(sys.argv[1])
 min_value = int(sys.argv[2])
 max_value = int(sys.argv[3])
+
+print(f'Generating array with {n_elems} elements')
+
+
+if n_elems == 25000 or n_elems == 250000 or n_elems == 1000000:
+    output = open(f'array_{n_elems}.txt', "w")
+else:
+    pass
+    output = open("array.txt", "w")
 
 random.seed(10)
 
