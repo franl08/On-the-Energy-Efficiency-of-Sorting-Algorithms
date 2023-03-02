@@ -37,5 +37,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 ------------
 
-- Results command
+## Results command
+
 ```  > bash results.sh ```
