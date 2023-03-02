@@ -38,4 +38,4 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 ------------
 
 - Results command
-```  > bash results.sh
+```  > bash results.sh ```
