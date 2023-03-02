@@ -1,5 +1,5 @@
 #!/bin/bash
-#Principal script to run all the scripts necessary to obtain the results
+#Main script to run all the scripts necessary to obtain the results
 
 bash bashScripts/RAPL.sh
 
