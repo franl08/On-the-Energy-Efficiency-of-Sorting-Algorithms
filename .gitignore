@@ -63,3 +63,4 @@ RAPL/main
 RAPL/main.o
 RAPL/rapl.o
 test.c
+a.out 
