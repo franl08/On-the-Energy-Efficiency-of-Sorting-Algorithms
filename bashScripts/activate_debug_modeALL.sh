@@ -8,7 +8,7 @@ echo "cd $d";
 #echo ${d::-1};
 if [[ -f "activate_debug_mode.sh" ]]; then
     echo "Activating debug mode in $d."
-    bash activate_debug_mode.sh
+    source activate_debug_mode.sh
 fi
 cd ..;
 done;

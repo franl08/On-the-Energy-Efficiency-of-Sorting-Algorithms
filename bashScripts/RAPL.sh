@@ -6,3 +6,4 @@ if [[ -f "rapl.o" ]]; then
     make clean;
 fi
 make main;
+cd ..;

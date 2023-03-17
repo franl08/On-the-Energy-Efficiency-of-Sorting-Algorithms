@@ -8,7 +8,7 @@ echo "cd $d";
 #echo ${d::-1};
 if [[ -f "disable_debug_mode.sh" ]]; then
     echo "Disabling debug mode in $d."
-    bash disable_debug_mode.sh
+    source disable_debug_mode.sh
 fi
 cd ..;
 done;

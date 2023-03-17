@@ -10,6 +10,7 @@
 #include <time.h>
 #include <math.h>
 #include <sensors/sensors.h>
+#include <unistd.h>
 #include "rapl.h"
 
 #define RUNTIME
@@ -63,7 +64,7 @@ int main (int argc, char **argv)
   strcpy(command, "./" );
   strcat(command,argv[1]);
 
-  ntimes = atoi (argv[2]);
+  ntimes = atoi(argv[2]);
 
   strcpy(res,command);
   strcat(res,".J");
@@ -78,23 +79,24 @@ int main (int argc, char **argv)
 
   fprintf(fp,"Language, Program, Input Size ,Package , Core(s) , GPU , DRAM? , Time (sec) \n");
 
-  
+  int flag = 0;
   for (i = 0 ; i < ntimes ; i++)
     {   sleep(1);                                    // sleep 1 second
-        
+        flag = 0;
         // Initialize the sensors library
         sensors_init(NULL);
         
         // Get a handle to the first available chip
         sensors_chip_name const *chip_name;
         int chip_nr = 0;
-        while ((chip_name = sensors_get_detected_chips(NULL, &chip_nr)) != NULL) {
+        while ((chip_name = sensors_get_detected_chips(NULL, &chip_nr)) != NULL && !flag) {
+            sleep(1);
             // Check if the chip is a CPU coretemp chip
             if (strncmp(chip_name->prefix, "coretemp", 8) == 0) {
                 // Get a handle to the first available feature on the chip
                 sensors_feature const *feature;
                 int feature_nr = 0;
-                while ((feature = sensors_get_features(chip_name, &feature_nr)) != NULL) {
+                if ((feature = sensors_get_features(chip_name, &feature_nr)) != NULL) {
                     // Check if the feature is a temperature sensor
                     if (feature->type == SENSORS_FEATURE_TEMP) {
                         // Get the temperature reading
@@ -102,12 +104,13 @@ int main (int argc, char **argv)
                         sensors_get_value(chip_name, feature->number, &temp);
                         
                         // Print the temperature
-                        //printf("CPU temperature: %.1f°C\n", temp);
+                        printf("CPU temperature: %.1f°C\n", temp);
                         
-                        // Check if temperature is less than 60
-                        if (temp < 60) {
-                            //printf("CPU temperature is less than 60°C. Exiting.\n");
-                            goto end; // jump to end label to break out of both loops
+                        // Check if temperature is less than 99
+                        if (temp < 99) {
+                            printf("CPU temperature is less than 99°C. Exiting.\n");
+                            //goto end; // jump to end label to break out of both loops
+                            flag = 1;
                         }
                     }
                 }
@@ -115,7 +118,7 @@ int main (int argc, char **argv)
         }
 
 
-        end:
+        //end:
         fprintf(fp, "%s , ",argv[3]);
         fprintf(fp,"%s , ",argv[1]);
         fprintf(fp,"%s , ",argv[4]);
