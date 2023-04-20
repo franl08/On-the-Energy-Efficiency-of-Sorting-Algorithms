@@ -9,17 +9,11 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - [X] C#
 - [X] Go
 - [X] Haskell
-- [X] Javascript
-- [X] Julia
-- [X] Lua
-- [X] Perl
 - [X] Python
-- [X] PHP
-- [X] Ruby
 - [X] Rust
 - [X] Swift
 
-`14` languages ready to use in the future
+`8` languages ready to use in the future + '8' algorithms
 `6` languages done : C, C++, C#, Go, Rust, Swift
 
 
