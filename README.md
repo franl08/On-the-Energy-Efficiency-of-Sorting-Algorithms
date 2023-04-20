@@ -26,8 +26,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - Sizes
 
   - 25 000
+  - 100 000
   - 250 000
-  - 1 000 000
 
 - Generated array
 
@@ -41,6 +41,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 ## Results command
 
-```  > bash results.sh ```
+```  > source/bash? results.sh ```
 
 CSV file of the results is generated in directory results

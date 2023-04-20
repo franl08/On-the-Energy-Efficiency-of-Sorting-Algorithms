@@ -77,7 +77,7 @@ int main (int argc, char **argv)
   fp = fopen(res,"w");
   rapl_init(core);
 
-  fprintf(fp,"Language, Program, Input Size ,Package , Core(s) , GPU , DRAM? , Time (sec) \n");
+  fprintf(fp,"Language, Program, Input Size ,Package , Cores , GPU , DRAM , Time \n");
 
   int flag = 0;
   for (i = 0 ; i < ntimes ; i++)

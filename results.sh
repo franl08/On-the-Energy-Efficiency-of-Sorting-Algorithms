@@ -17,6 +17,17 @@ source bashScripts/joinRAPLoutputs.sh
 
 #source bashScripts/rmALL.sh
 
+#source bashScripts/define_n_elems_100000.sh
+
+#source bashScripts/compileALL.sh
+
+#source bashScripts/runRAPL.sh
+
+#source bashScripts/addRAPLoutputs.sh
+
+
+#source bashScripts/rmALL.sh
+
 #source bashScripts/define_n_elems_250000.sh
 
 #source bashScripts/compileALL.sh
@@ -25,12 +36,3 @@ source bashScripts/joinRAPLoutputs.sh
 
 #source bashScripts/addRAPLoutputs.sh
 
-#source bashScripts/rmALL.sh
-
-#source bashScripts/define_n_elems_1000000.sh
-
-#source bashScripts/compileALL.sh
-
-#source bashScripts/runRAPL.sh
-
-#source bashScripts/addRAPLoutputs.sh
