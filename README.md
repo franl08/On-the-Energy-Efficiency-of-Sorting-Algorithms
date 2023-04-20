@@ -44,3 +44,30 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 ```  > source/bash? results.sh ```
 
 CSV file of the results is generated in directory results
+
+
+
+
+---------------
+
+
+## Energy VS Power (for powercap)
+
+
+- Power (w) - rate(or effort) at which work is done  
+- Energy (J) - ammount of work done
+- Power can change constantly while Energy is the accumulations
+
+- `Energy = Power X Seconds ` 
+
+
+- `360 000 = 100 x 3,600`
+
+
+--------------
+
+
+- comparar arrays ordenados? : porque uns algoritmos sao melhores que outros nisso
+
+
+
