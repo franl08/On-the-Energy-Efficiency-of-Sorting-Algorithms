@@ -3,6 +3,8 @@
 for d in */;
 do 
 cd $d;
-make;
+make small;
+make medium;
+make large;
 cd ..;
 done;
