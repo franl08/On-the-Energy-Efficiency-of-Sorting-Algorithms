@@ -3,9 +3,9 @@
 
 source bashScripts/RAPL.sh
 
-#source bashScripts/disable_debug_modeALL.sh
+source bashScripts/disable_debug_modeALL.sh
 
-#source bashScripts/rmALL.sh
+source bashScripts/rmALL.sh
 
 source bashScripts/compileALL.sh
 
