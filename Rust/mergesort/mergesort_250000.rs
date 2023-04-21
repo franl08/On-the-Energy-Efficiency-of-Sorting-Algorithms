@@ -37,4 +37,4 @@ fn main() {
     if debug {
         println!("{:?}", arr);
     }
-}s
+}
