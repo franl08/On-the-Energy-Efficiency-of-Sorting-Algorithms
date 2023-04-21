@@ -7,11 +7,11 @@ source bashScripts/disable_debug_modeALL.sh
 
 source bashScripts/rmALL.sh
 
-source bashScripts/define_n_elems_25000.sh
-
 source bashScripts/compileALL.sh
 
-source bashScripts/runRAPL.sh
+source bashScripts/define_n_elems_25000.sh
+
+source bashScripts/runRAPL_small.sh
 
 source bashScripts/joinRAPLoutputs.sh
 

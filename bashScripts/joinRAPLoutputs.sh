@@ -12,9 +12,17 @@ for d in */; do
     echo "cd $d"
     for alg in */; do
         echo "cd $alg"
-        if [[ -f "$alg${alg::-1}.J" ]]; then
-            echo "Joining ${alg::-1}.J"
-            tail -n +2 "$alg${alg::-1}.J" >> ../results/results.csv
+        if [[ -f "$alg${alg::-1}_25000.J" ]]; then
+            echo "Joining ${alg::-1}_25000.J"
+            tail -n +2 "$alg${alg::-1}_25000.J" >> ../results/results.csv
+        fi
+        if [[ -f "$alg${alg::-1}_100000.J" ]]; then
+            echo "Joining ${alg::-1}_100000.J"
+            tail -n +2 "$alg${alg::-1}_100000.J" >> ../results/results.csv
+        fi
+        if [[ -f "$alg${alg::-1}_250000.J" ]]; then
+            echo "Joining ${alg::-1}_250000.J"
+            tail -n +2 "$alg${alg::-1}_250000.J" >> ../results/results.csv
         fi
     done
     cd ..
