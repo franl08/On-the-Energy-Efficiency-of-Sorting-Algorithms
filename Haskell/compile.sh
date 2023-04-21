@@ -1,7 +1,15 @@
 #!/bin/bash
 
-for d in */;
-do
-ghc -O2 --make $d${d::-1}.hs -threaded -rtsopts;
-chmod 777 $d${d::-1};
-done;
+for d in */; do
+  cd "$d"
+  if [ -e "${d::-1}_25000.hs" ]; then
+    ghc "${d::-1}_25000.hs"
+  fi
+  if [ -e "${d::-1}_100000.hs" ]; then
+    ghc "${d::-1}_100000.hs"
+  fi
+  if [ -e "${d::-1}_250000.hs" ]; then
+    ghc "${d::-1}_250000.hs"
+  fi
+  cd ..
+done

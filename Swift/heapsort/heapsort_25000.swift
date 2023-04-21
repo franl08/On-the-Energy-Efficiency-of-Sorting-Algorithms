@@ -110,7 +110,8 @@ var arr = [74894, 4270, 56215, 63250, 75771, 1944, 27013, 60631, 64395, 36375, 8
 
 var debug = false
 
-let sorted = heapSort(arr)
-if debug {
-    print(sorted)
+var new_arr = heapSort(arr)
+
+if (debug) {
+    print(new_arr)
 }

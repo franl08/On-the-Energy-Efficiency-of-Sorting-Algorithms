@@ -1,8 +1,15 @@
 #!/bin/bash
 
-for d in */;
-do 
-cd $d;
-swiftc ${d::-1}.swift;
-cd ..;
-done;
+for d in */; do
+  cd "$d"
+  if [ -e "${d::-1}_25000.swift" ]; then
+    swiftc "${d::-1}_25000.swift"
+  fi
+  if [ -e "${d::-1}_100000.swift" ]; then
+    swiftc "${d::-1}_100000.swift"
+  fi
+  if [ -e "${d::-1}_250000.swift" ]; then
+    swiftc "${d::-1}_250000.swift"
+  fi
+  cd ..
+done
