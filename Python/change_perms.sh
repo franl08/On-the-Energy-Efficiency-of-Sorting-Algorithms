@@ -3,7 +3,6 @@
 for d in */;
 do 
 cd $d;
-echo "Running RAPL for $d_250000 algorithm
+sudo chmod +x ${d::-1}_*.sh;
 cd ..;
 done;
-

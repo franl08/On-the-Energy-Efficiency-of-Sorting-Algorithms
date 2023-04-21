@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-src/mergesort_25000.py
+#!/bin/bash
+python3 src/mergesort_25000.py

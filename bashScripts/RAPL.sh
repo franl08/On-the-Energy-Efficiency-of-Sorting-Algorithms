@@ -7,5 +7,3 @@ if [[ -f "rapl.o" ]]; then
 fi
 make main;
 cd ..;
-
-if (a > 10 && a != b)
