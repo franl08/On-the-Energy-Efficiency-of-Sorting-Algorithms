@@ -6,7 +6,7 @@ do
 cd $d;
 echo "cd $d";
 #echo ${d::-1};
-if [[ "${d::-1}" == "Swift" ]]; then
+if [[ "${d::-1}" == "C" ]]; then
     if [[ -f "compile.sh" ]]; then
         echo "Compiling executables for $d."
         source compile.sh

@@ -10,41 +10,23 @@
 #include <time.h>
 #include <math.h>
 #include <sensors/sensors.h>
+#include <sys/time.h>
 #include <unistd.h>
 #include "rapl.h"
 
 #define RUNTIME
+#define MIN_TEMPERATURE 60
 
 
 int main (int argc, char **argv) 
 { 
   // initialize the sensors
-  /*
   sensors_init(NULL);
 
-  const sensors_chip_name *chip;
-  int a = 0;
-  while ((chip = sensors_get_detected_chips(NULL, &a)) != NULL) {
-    if (strstr(chip->prefix, "coretemp")) {
-      break;
-    }
-  }
-
-  const sensors_feature *feature;
-  a = 0;
-  while ((feature = sensors_get_features(chip, &a)) != NULL) {
-    if (feature->type == SENSORS_FEATURE_TEMP && feature->number == 1) {
-      break;
-    }
-  }
-  
-
-  double temp;*/
-
-  char command[500],res[500];
-  int  ntimes = 1;
-  int  core = 0;
-  int  i=0;
+  char command[500], res[500];
+  int ntimes = 1;
+  int core = 0;
+  int i = 0;
 
 #ifdef RUNTIME
   clock_t begin, end;
@@ -58,62 +40,68 @@ int main (int argc, char **argv)
 
   // printf("Program to be executed: %d",argc);
   // strcpy( command, "./" );
- strcat(command,argv[1]);
- printf("Program to be executed: %s\n",argv[1]);
+  strcat(command, argv[1]);
+  printf("Program to be executed: %s\n",argv[1]);
 
   strcpy(command, "./" );
-  strcat(command,argv[1]);
+  strcat(command, argv[1]);
 
   ntimes = atoi(argv[2]);
 
-  strcpy(res,command);
-  strcat(res,".J");
-  printf("Command: %s  %d-times res: %s\n",command,ntimes,res);
+  strcpy(res, command);
+  strcat(res, ".J");
+  printf("Command: %s  %d-times res: %s\n", command, ntimes, res);
   
 
   printf("\n\n RUNNING THE PARAMETRIZED PROGRAM:  %s\n\n\n",command);
   fflush(stdout);
   
-  fp = fopen(res,"w");
+  fp = fopen(res, "w");
   rapl_init(core);
-
+  printf("%s | %s", command, res);
   fprintf(fp,"Language, Program, Input Size ,Package , Cores , GPU , DRAM , Time \n");
 
-  int flag = 0;
   for (i = 0 ; i < ntimes ; i++)
-    {   sleep(1);                                    // sleep 1 second
-        flag = 0;
-        // Initialize the sensors library
-        sensors_init(NULL);
-        
-        // Get a handle to the first available chip
-        sensors_chip_name const *chip_name;
-        int chip_nr = 0;
-        while ((chip_name = sensors_get_detected_chips(NULL, &chip_nr)) != NULL && !flag) {
-            sleep(1);
-            // Check if the chip is a CPU coretemp chip
-            if (strncmp(chip_name->prefix, "coretemp", 8) == 0) {
-                // Get a handle to the first available feature on the chip
-                sensors_feature const *feature;
-                int feature_nr = 0;
-                if ((feature = sensors_get_features(chip_name, &feature_nr)) != NULL) {
-                    // Check if the feature is a temperature sensor
-                    if (feature->type == SENSORS_FEATURE_TEMP) {
-                        // Get the temperature reading
-                        double temp;
-                        sensors_get_value(chip_name, feature->number, &temp);
-                        
-                        // Print the temperature
-                        printf("CPU temperature: %.1f°C\n", temp);
-                        
-                        // Check if temperature is less than 99
-                        if (temp < 99) {
-                            printf("CPU temperature is less than 99°C. Exiting.\n");
-                            //goto end; // jump to end label to break out of both loops
-                            flag = 1;
-                        }
-                    }
-            }
+    {   
+        sleep(1);
+        double temp = MIN_TEMPERATURE + 1;
+        while (temp >= MIN_TEMPERATURE) {
+          sensors_chip_name const *chip_name;
+          int chip_nr = 0;
+          while ((chip_name = sensors_get_detected_chips(NULL, &chip_nr)) != NULL) {
+              sleep(1);
+              // Check if the chip is a CPU coretemp chip
+              if (strncmp(chip_name->prefix, "coretemp", 8) == 0) {
+                  // Get a handle to the first available feature on the chip
+                  sensors_feature const *feature;
+                  int feature_nr = 0;
+                  if ((feature = sensors_get_features(chip_name, &feature_nr)) != NULL) {
+                      // Check if the feature is a temperature sensor
+                      if (feature->type == SENSORS_FEATURE_TEMP) {
+                          // Get the temperature reading
+                          sensors_subfeature const* subfeature;
+                          int subfeature_nr = 0;
+                          while((subfeature = sensors_get_all_subfeatures(chip_name, feature, &subfeature_nr)) != NULL) {
+                            if (subfeature->type == SENSORS_SUBFEATURE_TEMP_INPUT) {
+                              double value;
+                              if(sensors_get_value(chip_name, subfeature->number, &value) == 0) {
+                                temp = value;
+                                printf("Current temperature: %.1f°C\n", temp);
+                              }
+                            }
+                          } 
+                      }
+                      if (temp < MIN_TEMPERATURE) {
+                          printf("CPU temperature is less than %d°C. Exiting.\n", MIN_TEMPERATURE);
+                          break;
+                      }
+                  }
+              }
+          }
+          if (temp <= MIN_TEMPERATURE) {
+            printf("CPU temperature is less than %d°C. Exiting.\n", MIN_TEMPERATURE);
+            break;
+          }
         }
 
 
@@ -152,6 +140,4 @@ int main (int argc, char **argv)
   // sensors cleanup
   sensors_cleanup();
   return 0;
-}
-
 }
