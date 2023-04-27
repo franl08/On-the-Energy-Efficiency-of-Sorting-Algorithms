@@ -58,7 +58,6 @@ int main (int argc, char **argv)
   
   fp = fopen(res, "w");
   rapl_init(core);
-  printf("%s | %s", command, res);
   fprintf(fp,"Language, Program, Input Size ,Package , Cores , GPU , DRAM , Time \n");
 
   for (i = 0 ; i < ntimes ; i++)
