@@ -1,6 +1,8 @@
 #!/bin/bash
 #Main script to run all the scripts necessary to obtain the results
 
+# sudo apt-get install libsensors-dev -> NEEDED TO UBUNTU
+
 source bashScripts/RAPL.sh
 
 source bashScripts/disable_debug_modeALL.sh
