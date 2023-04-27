@@ -7,3 +7,5 @@ for dir in "$dir_to_process"/*/; do
   mono *.exe
   cd ".."
 done
+
+
