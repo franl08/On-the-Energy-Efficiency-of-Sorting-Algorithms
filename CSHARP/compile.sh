@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for d in */; do
-  cd "$d"
+  cd "$d/src/"
   if [ -e "${d::-1}_25000.cs" ]; then
     mcs "${d::-1}_25000.cs"
   fi
