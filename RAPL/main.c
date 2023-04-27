@@ -62,7 +62,6 @@ int main (int argc, char **argv)
 
   for (i = 0 ; i < ntimes ; i++)
     {   
-        sleep(1);
         double temp = MIN_TEMPERATURE + 1;
         while (temp >= MIN_TEMPERATURE) {
           sensors_chip_name const *chip_name;
