@@ -85,20 +85,17 @@ int main (int argc, char **argv)
                               double value;
                               if(sensors_get_value(chip_name, subfeature->number, &value) == 0) {
                                 temp = value;
-                                printf("Current temperature: %.1f°C\n", temp);
                               }
                             }
                           } 
                       }
                       if (temp < MIN_TEMPERATURE) {
-                          printf("CPU temperature is less than %d°C. Exiting.\n", MIN_TEMPERATURE);
                           break;
                       }
                   }
               }
           }
           if (temp <= MIN_TEMPERATURE) {
-            printf("CPU temperature is less than %d°C. Exiting.\n", MIN_TEMPERATURE);
             break;
           }
         }
