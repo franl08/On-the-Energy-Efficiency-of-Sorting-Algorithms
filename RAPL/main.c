@@ -67,7 +67,6 @@ int main (int argc, char **argv)
           sensors_chip_name const *chip_name;
           int chip_nr = 0;
           while ((chip_name = sensors_get_detected_chips(NULL, &chip_nr)) != NULL) {
-              sleep(1);
               // Check if the chip is a CPU coretemp chip
               if (strncmp(chip_name->prefix, "coretemp", 8) == 0) {
                   // Get a handle to the first available feature on the chip
