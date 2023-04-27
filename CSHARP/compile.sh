@@ -11,5 +11,5 @@ for d in */; do
   if [ -e "${d::-1}_250000.cs" ]; then
     mcs "${d::-1}_250000.cs"
   fi
-  cd ..
+  cd ../..
 done
