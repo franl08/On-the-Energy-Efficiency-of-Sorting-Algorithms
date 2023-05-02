@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/selectionsort_100000.cs
+mono src/selectionsort_100000.exe

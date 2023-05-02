@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/quicksort_25000.cs
+mono src/quicksort_25000.exe

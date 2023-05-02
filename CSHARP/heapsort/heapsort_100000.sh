@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/heapsort_100000.cs
+mono src/heapsort_100000.exe

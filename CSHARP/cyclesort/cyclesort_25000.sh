@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/cyclesort_25000.cs
+mono src/cyclesort_25000.exe

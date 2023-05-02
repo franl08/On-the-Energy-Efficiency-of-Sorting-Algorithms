@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/mergesort_100000.cs
+mono src/mergesort_100000.exe

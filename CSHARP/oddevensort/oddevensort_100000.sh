@@ -1,2 +1,2 @@
 #!/bin/bash
-mono src/oddevensort_100000.cs
+mono src/oddevensort_100000.exe
