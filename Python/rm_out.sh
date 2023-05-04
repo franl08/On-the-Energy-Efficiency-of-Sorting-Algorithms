@@ -1,9 +1,8 @@
 #!/bin/bash
 
 for d in */;
-do 
-cd $d;
-make clean;
-rm -f *.J;
+do
+cd $d
+rm -f *.J
 cd ..;
 done;
