@@ -4,18 +4,14 @@
 
 List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
-- [X] C ---- Miguel ---- (+) Scripts
+- [X] C
 - [X] C++ 
 - [X] C#
-- [X] Go ---- Alex ----
+- [X] Go
 - [X] Haskell 
 - [X] Python
 - [X] Rust
 - [X] Swift
-
-`8` languages ready to use in the future + '8' algorithms
-`6` languages done : C, C++, C#, Go, Rust, Swift
-
 
 - Sizes
 
@@ -28,7 +24,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 `python generate_array.py $N_ELEMS 0 100000`
 
 
-- We used 11 different sorting algorithms
+- We used 8 different sorting algorithms
 
 
 ------------
@@ -38,9 +34,6 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 ```  > source/bash? results.sh ```
 
 CSV file of the results is generated in directory results
-
-
-
 
 ---------------
 
