@@ -25,7 +25,7 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 
 - Generated array
 
-`python generate_array $N_ELEMS 0 100000`
+`python generate_array.py $N_ELEMS 0 100000`
 
 
 - We used 11 different sorting algorithms
