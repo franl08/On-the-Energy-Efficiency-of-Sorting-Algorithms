@@ -58,7 +58,7 @@ int main (int argc, char **argv)
   
   fp = fopen(res, "w");
   rapl_init(core);
-  fprintf(fp,"Language, Program, Input Size ,Package , Cores , GPU , DRAM , Time \n");
+  fprintf(fp,"Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)\n");
 
   for (i = 0 ; i < ntimes ; i++)
     {   
@@ -100,29 +100,29 @@ int main (int argc, char **argv)
 
 
         //end:
-        fprintf(fp, "%s , ",argv[3]);
-        fprintf(fp,"%s , ",argv[1]);
-        fprintf(fp,"%s , ",argv[4]);
+        fprintf(fp, "%s, ",argv[3]);
+        fprintf(fp,"%s, ",argv[1]);
+        fprintf(fp,"%s, ",argv[4]);
         rapl_before(fp,core);
       
 #ifdef RUNTIME
-        begin = clock();
+  // begin = clock();
 	gettimeofday(&tvb, 0);
 #endif
 	
         system(command);
 
 #ifdef RUNTIME
-	end = clock();
+	// end = clock();
 	gettimeofday(&tva, 0);
 	//	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-	time_spent = (tva.tv_sec-tvb.tv_sec)*1000000 + tva.tv_usec-tvb.tv_usec;
+	time_spent = (tva.tv_sec-tvb.tv_sec) * 1000000 + (tva.tv_usec - tvb.tv_usec);
 #endif
 
 	rapl_after(fp,core);
 
 #ifdef RUNTIME	
-	fprintf(fp," %G \n",time_spent);
+	fprintf(fp," %G \n", time_spent / 1000000);
 #endif	
     }
     

@@ -5,7 +5,7 @@ main : main.c rapl.o
 	chmod 777 main
 
 rapl.o : rapl.c rapl.h
-	gcc -O2  -c rapl.c  -lm -lsensors
+	gcc -O2  -c rapl.c -lm -lsensors
 
 clean:
 	rm -rf main.o rapl.o

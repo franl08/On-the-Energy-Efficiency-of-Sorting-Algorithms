@@ -71,8 +71,8 @@
 */strandsort/*.J
 */treesort/*.J
 
-*.hi
-*.o
+*/Haskell/*/*.hi
+*/Haskell/*/*.o
 
 RAPL/main
 test.c
