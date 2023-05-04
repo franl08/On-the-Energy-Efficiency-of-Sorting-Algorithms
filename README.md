@@ -20,8 +20,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - Sizes
 
   - 25 000
+  - 50 000
   - 100 000
-  - 250 000
 
 - Generated array
 
