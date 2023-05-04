@@ -1,6 +1,6 @@
 SMALL=selectionsort_25000
-MEDIUM=selectionsort_100000
-LARGE=selectionsort_250000
+MEDIUM=selectionsort_50000
+LARGE=selectionsort_100000
 
 main : $(SMALL).c
 	gcc -O2 -o $(SMALL) $(SMALL).c

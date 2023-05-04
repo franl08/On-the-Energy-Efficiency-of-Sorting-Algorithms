@@ -1,6 +1,6 @@
 SMALL=heapsort_25000
-MEDIUM=heapsort_100000
-LARGE=heapsort_250000
+MEDIUM=heapsort_50000
+LARGE=heapsort_100000
 
 main : $(SMALL).c
 	gcc -O2 -o $(SMALL) $(SMALL).c

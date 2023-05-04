@@ -1,6 +1,6 @@
 SMALL=bubblesort_25000
-MEDIUM=bubblesort_100000
-LARGE=bubblesort_250000
+MEDIUM=bubblesort_50000
+LARGE=bubblesort_100000
 
 main : $(SMALL).c
 	gcc -O2 -o $(SMALL) $(SMALL).c

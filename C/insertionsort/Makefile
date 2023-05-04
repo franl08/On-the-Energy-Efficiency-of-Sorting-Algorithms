@@ -1,6 +1,6 @@
 SMALL=insertionsort_25000
-MEDIUM=insertionsort_100000
-LARGE=insertionsort_250000
+MEDIUM=insertionsort_50000
+LARGE=insertionsort_100000
 
 main : $(SMALL).c
 	gcc -O2 -o $(SMALL) $(SMALL).c

@@ -1,6 +1,6 @@
 SMALL=oddevensort_25000
-MEDIUM=oddevensort_100000
-LARGE=oddevensort_250000
+MEDIUM=oddevensort_50000
+LARGE=oddevensort_100000
 
 main : $(SMALL).c
 	gcc -O2 -o $(SMALL) $(SMALL).c
