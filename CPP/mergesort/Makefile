@@ -1,6 +1,6 @@
 SMALL=mergesort_25000
-MEDIUM=mergesort_100000
-LARGE=mergesort_250000
+MEDIUM=mergesort_50000
+LARGE=mergesort_100000
 
 
 main : $(SMALL).cpp

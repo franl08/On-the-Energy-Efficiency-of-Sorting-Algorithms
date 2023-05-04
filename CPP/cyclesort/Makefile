@@ -1,6 +1,6 @@
 SMALL=cyclesort_25000
-MEDIUM=cyclesort_100000
-LARGE=cyclesort_250000
+MEDIUM=cyclesort_50000
+LARGE=cyclesort_100000
 
 
 main : $(SMALL).cpp

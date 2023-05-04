@@ -1,6 +1,6 @@
 SMALL=quicksort_25000
-MEDIUM=quicksort_100000
-LARGE=quicksort_250000
+MEDIUM=quicksort_50000
+LARGE=quicksort_100000
 
 
 main : $(SMALL).cpp
