@@ -1,10 +1,12 @@
 #!/bin/bash
 
-dir_to_process="."
 
-for dir in "$dir_to_process"/*/; do
-  cd "$dir"
-  rm *.exe
-  rm -f *.J
-  cd ".."
+for d in */;
+do 
+cd $d;
+cd src/; 
+rm *.exe
+rm -f *.J
+cd ..
+cd ..
 done
