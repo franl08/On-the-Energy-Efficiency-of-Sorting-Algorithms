@@ -16,7 +16,7 @@ for d in */; do
             cd "$alg"
             echo "cd $alg"
             # loop through each input size output file and append the data to the output file
-            for size in 25000 100000 250000; do
+            for size in 25000 50000 100000; do
                 if [[ -f "${alg::-1}_${size}.J" ]]; then
                     # append data from the output file starting from the second line (to exclude the header row)
                     echo "Joining ${alg::-1}_${size}.J"
