@@ -34,8 +34,8 @@ List contains the part of the 27 languages from the *23.02 Benchmarks Game* Stud
 - 50 000
 - 100 000
 
-- Generated array with Python script:
-- 
+Generated array with Python script:
+
 `python helpers/generate_array.py $N_ELEMS 0 100000`
 
 ------------
