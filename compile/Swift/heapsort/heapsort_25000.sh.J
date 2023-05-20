@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Swift, heapsort_25000.sh, 25000, 0.384766 , 0.182861 , 0.016113 , 0.000000 ,  0.013123 
+Swift, heapsort_25000.sh, 25000, 2.583008 , 0.975342 , 0.059509 , 0.000000 ,  0.132726 

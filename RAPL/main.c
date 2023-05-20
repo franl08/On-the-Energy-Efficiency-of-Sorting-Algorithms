@@ -1,22 +1,74 @@
-/*
- *  Análise e Teste de Software
- *  João Saraiva 
- *  2016-2017
- */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
 #include <sensors/sensors.h>
 #include <sys/time.h>
-#include <unistd.h>
+#include <raplcap.h>
 #include "rapl.h"
 
 #define RUNTIME
 #define MIN_TEMPERATURE 80
+#define POWERCAP 100
 
+raplcap powercap() {
+  raplcap rc;
+  raplcap_limit rl_short, rl_long;
+  uint32_t n, d;
+
+  n = raplcap_get_num_packages(NULL);
+  if(n == 0) {
+    fprintf(stderr, "raplcap_get_num_packages\n");
+    exit(1);
+  }
+
+  if(raplcap_init(&rc)) {
+    fprintf(stderr, "raplcap_init\n");
+    exit(1);
+  }
+
+  d = raplcap_get_num_die(&rc, 0);
+  if(d == 0) {
+    fprintf(stderr, "raplcap_get_num_die\n");
+    raplcap_destroy(&rc);
+    exit(1);
+  }
+
+  rl_short.watts = POWERCAP;
+  rl_short.seconds = 1;
+  rl_long.watts = POWERCAP;
+  rl_long.seconds = 1;
+  for(int i = 0; i < n; i++) {
+    for (int j = 0; j < d; j++) {
+      if(raplcap_pd_set_limits(&rc, i, j, RAPLCAP_ZONE_PACKAGE, &rl_long, &rl_short)) {
+        fprintf(stderr, "raplcap_pd_set_limits\n");
+        exit(1);
+      }
+    } 
+  }
+
+  // for each package die, enable the power caps
+  // this could be done before setting caps, at the risk of enabling unknown power cap values first
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < d; j++) {
+      if (raplcap_pd_set_zone_enabled(&rc, i, j, RAPLCAP_ZONE_PACKAGE, 1)) {
+        fprintf(stderr, "raplcap_pd_set_zone_enabled\n");
+        exit(1);
+      }
+    }
+  }
+
+  printf("ENERGY LIMIT: %.2f\n", raplcap_pd_get_energy_counter_max(&rc, 0, 0, RAPLCAP_ZONE_PACKAGE));
+
+  return rc;
+}
+
+void destroy_raplcap(raplcap rc) {
+  if(raplcap_destroy(&rc)) {
+    fprintf(stderr, "raplcap_destroy\n");
+    exit(1);
+  }
+}
 
 int main (int argc, char **argv) 
 { 
@@ -59,6 +111,10 @@ int main (int argc, char **argv)
   fp = fopen(res, "w");
   rapl_init(core);
   fprintf(fp,"Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)\n");
+
+  #ifdef POWERCAP
+    raplcap rc = powercap();
+  #endif
 
   for (i = 0 ; i < ntimes ; i++)
     {   
@@ -131,6 +187,9 @@ int main (int argc, char **argv)
   fclose(fp);
   fflush(stdout);
 
+  #ifdef POWERCAP
+    destroy_raplcap(rc);
+  #endif
   // sensors cleanup
   sensors_cleanup();
   return 0;

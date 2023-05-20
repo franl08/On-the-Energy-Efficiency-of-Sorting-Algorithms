@@ -1,11 +1,12 @@
+CC := gcc
+CFLAGS := -O2
+LDFLAGS := -lm -lsensors $(shell pkg-config --libs --static raplcap-powercap) $(shell pkg-config --cflags raplcap-powercap)
 
+main: main.c rapl.o
+	$(CC) $(CFLAGS) -o main main.c rapl.o $(LDFLAGS)
 
-main : main.c rapl.o
-	gcc -O2  -o main main.c rapl.o -lm -lsensors
-	chmod 777 main
-
-rapl.o : rapl.c rapl.h
-	gcc -O2  -c rapl.c -lm -lsensors
+rapl.o: rapl.c rapl.h
+	$(CC) $(CFLAGS) -c rapl.c -lm -lsensors
 
 clean:
-	rm -rf main.o rapl.o
+	rm -rf main rapl.o
