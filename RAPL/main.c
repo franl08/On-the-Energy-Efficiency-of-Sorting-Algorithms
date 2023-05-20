@@ -15,7 +15,7 @@
 #include "rapl.h"
 
 #define RUNTIME
-#define MIN_TEMPERATURE 55
+#define MIN_TEMPERATURE 80
 
 
 int main (int argc, char **argv) 
