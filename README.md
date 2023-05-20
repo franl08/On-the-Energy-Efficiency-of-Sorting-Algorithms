@@ -4,36 +4,57 @@
 
 List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
 
-- [X] C
-- [X] C++ 
-- [X] C#
-- [X] Go
-- [X] Haskell 
-- [X] Python
-- [X] Rust
-- [X] Swift
+- C
+- C++ 
+- C#
+- Go
+- Haskell 
+- Python
+- Rust
+- Swift
 
-- Sizes
+-----------
 
-  - 25 000
-  - 50 000
-  - 100 000
+## LIST OF ALGORITHMS
 
-- Generated array
+- BubbleSort;
+- CycleSort;
+- HeapSort;
+- InsertionSort;
+- MergeSort;
+- OddEvenSort;
+- QuickSort;
+- SelectionSort.
 
-`python generate_array.py $N_ELEMS 0 100000`
+----------
 
+## Input Sizes
 
-- We used 8 different sorting algorithms
+- 25 000
+- 50 000
+- 100 000
 
+- Generated array with Python script:
+- 
+`python helpers/generate_array.py $N_ELEMS 0 100000`
 
 ------------
 
-## Results command
+## Results commands
 
-```  > source/bash? results.sh ```
+### Only algorithms
 
-CSV file of the results is generated in directory results
+```  $ bash algorithms.sh ```
+
+### Only compiling
+
+``` $ bash compile.sh ```
+
+### Both
+
+``` $ bash all.sh ```
+
+CSV files with the results will be generated in the directory `results`.
 
 ---------------
 
@@ -47,14 +68,6 @@ CSV file of the results is generated in directory results
 
 - `Energy = Power X Seconds ` 
 
-
 - `360 000 = 100 x 3,600`
 
-
---------------
-
-
-- comparar arrays ordenados? : porque uns algoritmos sao melhores que outros nisso
-
-
-
+- **NEED TO CHECK VALUE FOR POWERCAP**
