@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/CSHARP/heapsort/src
-mcs heapsort_50000.cs
+mcs -optimize+ heapsort_50000.cs

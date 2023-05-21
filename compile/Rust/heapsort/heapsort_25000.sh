@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/heapsort
-rustc heapsort_25000.rs -O;
+rustc -C opt-level=2 heapsort_25000.rs

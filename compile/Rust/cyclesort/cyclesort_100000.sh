@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/cyclesort
-rustc cyclesort_100000.rs -O;
+rustc -C opt-level=2 cyclesort_100000.rs

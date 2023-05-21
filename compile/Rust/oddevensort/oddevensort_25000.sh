@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/oddevensort
-rustc oddevensort_25000.rs -O;
+rustc -C opt-level=2 oddevensort_25000.rs

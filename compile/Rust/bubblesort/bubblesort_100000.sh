@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/bubblesort
-rustc bubblesort_100000.rs -O;
+rustc -C opt-level=2 bubblesort_100000.rs

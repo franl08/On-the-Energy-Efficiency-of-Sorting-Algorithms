@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/CSHARP/selectionsort/src
-mcs selectionsort_100000.cs
+mcs -optimize+ selectionsort_100000.cs

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/CSHARP/cyclesort/src
-mcs cyclesort_25000.cs
+mcs -optimize+ cyclesort_25000.cs

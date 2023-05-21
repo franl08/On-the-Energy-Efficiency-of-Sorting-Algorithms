@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/selectionsort
-rustc selectionsort_50000.rs -O;
+rustc -C opt-level=2 selectionsort_50000.rs

@@ -8,8 +8,8 @@
 #include "rapl.h"
 
 #define RUNTIME
-#define MIN_TEMPERATURE 80
-#define POWERCAP 100
+#define MIN_TEMPERATURE 60
+// #define POWERCAP 400 TODO: check if this is working
 
 raplcap powercap() {
   raplcap rc;

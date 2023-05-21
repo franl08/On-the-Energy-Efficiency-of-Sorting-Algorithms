@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd ../../../algorithms/Rust/quicksort
-rustc quicksort_50000.rs -O;
+rustc -C opt-level=2 quicksort_50000.rs
