@@ -11,6 +11,7 @@
 #define MIN_TEMPERATURE 60
 // #define POWERCAP 400 TODO: check if this is working
 
+#ifdef POWERCAP
 raplcap powercap() {
   raplcap rc;
   raplcap_limit rl_short, rl_long;
@@ -57,11 +58,10 @@ raplcap powercap() {
       }
     }
   }
-
-  printf("ENERGY LIMIT: %.2f\n", raplcap_pd_get_energy_counter_max(&rc, 0, 0, RAPLCAP_ZONE_PACKAGE));
-
   return rc;
 }
+
+#endif
 
 void destroy_raplcap(raplcap rc) {
   if(raplcap_destroy(&rc)) {

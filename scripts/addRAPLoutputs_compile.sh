@@ -7,8 +7,8 @@ output_file="results/compile.csv"
 # loop through each directory in the current directory
 for d in compile/*/; do 
     # move into the directory
-        cd "compile/$d"
-        echo "cd compile/$d"
+        cd "$d"
+        echo "cd $d"
         # loop through each algorithm directory in the current directory
         for alg in */; do
             # move into the algorithm directory

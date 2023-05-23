@@ -9,6 +9,8 @@ source scripts/disable_debug_modeALL.sh
 
 source scripts/rmALL.sh
 
+source scripts/rmALL_compile.sh
+
 source scripts/define_n_elems_25000.sh
 
 source scripts/change_perms.sh
@@ -22,5 +24,7 @@ source scripts/rmALL.sh
 source scripts/compile_medium.sh
 
 source scripts/define_n_elems_100000.sh
+
+source scripts/rmALL.sh
 
 source scripts/compile_large.sh

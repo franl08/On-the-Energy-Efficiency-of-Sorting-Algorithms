@@ -7,8 +7,8 @@ output_file="results/algorithms.csv"
 # loop through each directory in the current directory
 for d in algorithms/*/; do 
     # move into the directory
-        cd "algorithms/$d"
-        echo "cd algorithms/$d"
+        cd "$d"
+        echo "cd $d"
         # loop through each algorithm directory in the current directory
         for alg in */; do
             # move into the algorithm directory

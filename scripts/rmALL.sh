@@ -10,5 +10,4 @@ for d in algorithms/*/; do
         source rm.sh
     fi
     cd ../..
-    echo "$ls"
 done

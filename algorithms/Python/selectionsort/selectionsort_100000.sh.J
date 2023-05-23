@@ -1,0 +1,6 @@
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
+Python, selectionsort_100000.sh, 100000, 4772.886292 , 2543.588501 , 1.004578 , 0.000000 ,  192.615 
+Python, selectionsort_100000.sh, 100000, 4835.032898 , 2581.930603 , 1.090881 , 0.000000 ,  195.245 
+Python, selectionsort_100000.sh, 100000, 4713.627869 , 2534.613770 , 1.464661 , 0.000000 ,  190.243 
+Python, selectionsort_100000.sh, 100000, 4782.076111 , 2571.335693 , 1.489868 , 0.000000 ,  193.064 
+Python, selectionsort_100000.sh, 100000, 4823.245605 , 2589.887634 , 1.544678 , 0.000000 ,  194.894 

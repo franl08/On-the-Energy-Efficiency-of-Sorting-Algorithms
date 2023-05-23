@@ -29,12 +29,12 @@ for d in algorithms/*/; do
             if [[ -f "${alg::-1}_${size}.J" ]]; then
                 # append data from the output file starting from the second line (to exclude the header row)
                 echo "Joining ${alg::-1}_${size}.J"
-                tail -n +2 "${alg::-1}_${size}.J" >> "../../$output_file"
+                tail -n +2 "${alg::-1}_${size}.J" >> "../../../$output_file"
             fi
             if [[ -f "${alg::-1}_${size}.sh.J" ]]; then
                 # append data from the output file starting from the second line (to exclude the header row)
                 echo "Joining ${alg::-1}_${size}.sh.J"
-                tail -n +2 "${alg::-1}_${size}.sh.J" >> "../../$output_file"
+                tail -n +2 "${alg::-1}_${size}.sh.J" >> "../../../$output_file"
             fi
         done
         # move back up to the parent directory
