@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Haskell, oddevensort_100000.sh, 100000, 1124.354797 , 592.399048 , 0.405823 , 0.000000 ,  45.4622 
+Haskell, oddevensort_100000.sh, 100000, 1139.643311 , 600.098755 , 0.393188 , 0.000000 ,  46.1563 

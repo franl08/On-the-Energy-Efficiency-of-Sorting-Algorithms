@@ -1,6 +1,0 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Python, insertionsort_100000.sh, 100000, 4333.744141 , 2333.004883 , 1.351135 , 0.000000 ,  175.048 
-Python, insertionsort_100000.sh, 100000, 4254.267334 , 2290.154236 , 1.337463 , 0.000000 ,  171.816 
-Python, insertionsort_100000.sh, 100000, 4257.249634 , 2291.426636 , 1.332886 , 0.000000 ,  171.96 
-Python, insertionsort_100000.sh, 100000, 4264.594238 , 2297.119812 , 1.417603 , 0.000000 ,  172.195 
-Python, insertionsort_100000.sh, 100000, 4309.955139 , 2322.384644 , 1.310791 , 0.000000 ,  173.977 

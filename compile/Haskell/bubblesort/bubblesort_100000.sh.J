@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Haskell, bubblesort_100000.sh, 100000, 1246.875854 , 640.576233 , 0.411499 , 0.000000 ,  51.3608 
+Haskell, bubblesort_100000.sh, 100000, 1239.899902 , 653.364502 , 0.471924 , 0.000000 ,  50.1947 
