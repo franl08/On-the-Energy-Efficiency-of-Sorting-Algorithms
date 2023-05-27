@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Go, oddevensort_100000.sh, 100000, 3.424377 , 1.757263 , 0.009766 , 0.000000 ,  0.143663 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Go, oddevensort_100000.sh, 100000, 7.578613 , 1.640503 , 0.009460 , 0.000000 , 55720, 0.515789 

@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Rust, bubblesort_100000.sh, 100000, 948.790344 , 503.892883 , 0.354248 , 0.000000 ,  38.4188 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Rust, bubblesort_100000.sh, 100000, 2088.258301 , 426.466919 , 0.753784 , 0.000000 , 4311996, 144.084 

@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-C, heapsort_100000.sh, 100000, 4.914124 , 2.593506 , 0.017090 , 0.000000 ,  0.20099 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+C, heapsort_100000.sh, 100000, 13.157898 , 2.645508 , 0.020264 , 0.000000 , 54084, 0.916133 

@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Go, quicksort_100000.sh, 100000, 3.617065 , 1.727966 , 0.007996 , 0.000000 ,  0.161964 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Go, quicksort_100000.sh, 100000, 7.642212 , 1.647156 , 0.008240 , 0.000000 , 56752, 0.521339 

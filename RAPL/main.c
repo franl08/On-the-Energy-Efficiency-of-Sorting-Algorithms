@@ -11,7 +11,7 @@
 #define RUNTIME
 #define MEMORY_USAGE
 #define MIN_TEMPERATURE 60
-// #define POWERCAP 400 TODO: check if this is working
+// #define POWERCAP 100
 
 #ifdef POWERCAP
 raplcap powercap() {
@@ -80,7 +80,7 @@ int main(int argc, char **argv) {
 
   char command[500], res[500];
   int ntimes = 1;
-  int core = 0;
+  int core = 2;
   int i = 0;
 
 #ifdef RUNTIME
@@ -112,7 +112,6 @@ int main(int argc, char **argv) {
 
   fp = fopen(res, "w");
   rapl_init(core);
-
 #ifdef MEMORY_USAGE
   fprintf(fp, "Language, Program, Input Size, Package, Cores, GPU, DRAM, "
               "Memory(KB), Time(sec)\n");
@@ -124,6 +123,7 @@ int main(int argc, char **argv) {
 
 #ifdef POWERCAP
   raplcap rc = powercap();
+  show_power_limit(core);
 #endif
 
   for (i = 0; i < ntimes; i++) {
@@ -199,7 +199,6 @@ int main(int argc, char **argv) {
     time_spent =
         (tva.tv_sec - tvb.tv_sec) * 1000000 + (tva.tv_usec - tvb.tv_usec);
 #endif
-
     rapl_after(fp, core);
 
 #ifdef RUNTIME

@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-C#, heapsort_100000.sh, 100000, 15.531311 , 8.207336 , 0.027649 , 0.000000 ,  0.634574 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+C#, heapsort_100000.sh, 100000, 39.297668 , 7.886902 , 0.029480 , 0.000000 , 71508, 2.74179 

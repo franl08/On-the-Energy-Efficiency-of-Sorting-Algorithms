@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Haskell, quicksort_100000.sh, 100000, 1222.284973 , 643.444214 , 0.471313 , 0.000000 ,  49.5134 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Haskell, quicksort_100000.sh, 100000, 2583.543396 , 524.835266 , 0.873169 , 0.000000 , 1690852, 178.7 

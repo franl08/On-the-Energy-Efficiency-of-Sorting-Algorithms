@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-C, bubblesort_100000.sh, 100000, 5.086975 , 2.604431 , 0.019531 , 0.000000 ,  0.213859 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+C, bubblesort_100000.sh, 100000, 13.059631 , 2.700684 , 0.016296 , 0.000000 , 54116, 0.903103 

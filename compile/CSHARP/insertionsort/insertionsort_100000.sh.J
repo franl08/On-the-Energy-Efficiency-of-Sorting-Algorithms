@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-C#, insertionsort_100000.sh, 100000, 14.940979 , 7.956116 , 0.014832 , 0.000000 ,  0.60808 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+C#, insertionsort_100000.sh, 100000, 38.914490 , 7.827332 , 0.027039 , 0.000000 , 73544, 2.7151 

@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-C#, quicksort_100000.sh, 100000, 15.278931 , 8.094543 , 0.015015 , 0.000000 ,  0.624647 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+C#, quicksort_100000.sh, 100000, 39.234558 , 7.948914 , 0.028503 , 0.000000 , 73460, 2.73235 

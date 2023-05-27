@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Haskell, mergesort_100000.sh, 100000, 1238.012512 , 651.995728 , 0.416565 , 0.000000 ,  50.1315 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Haskell, mergesort_100000.sh, 100000, 2635.044861 , 535.038391 , 0.842163 , 0.000000 , 1749792, 182.271 

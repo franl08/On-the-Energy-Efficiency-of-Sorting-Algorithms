@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Haskell, cyclesort_100000.sh, 100000, 2437.952148 , 1284.135254 , 0.800598 , 0.000000 ,  98.6497 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Haskell, cyclesort_100000.sh, 100000, 5260.256226 , 1068.807556 , 1.740845 , 0.000000 , 2447580, 363.843 

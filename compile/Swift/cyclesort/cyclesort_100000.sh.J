@@ -1,2 +1,2 @@
-Language, Program, Input Size, Package, Cores, GPU, DRAM, Time(sec)
-Swift, cyclesort_100000.sh, 100000, 317.354370 , 163.095032 , 0.147400 , 0.000000 ,  13.2662 
+Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
+Swift, cyclesort_100000.sh, 100000, 539.757812 , 106.641541 , 0.197754 , 0.000000 , 397080, 37.5962 
