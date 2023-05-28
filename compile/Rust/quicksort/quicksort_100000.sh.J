@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-Rust, quicksort_100000.sh, 100000, 2059.744507 , 421.053345 , 0.746582 , 0.000000 , 4318436, 142.085 
+Rust, quicksort_100000.sh, 100000, 914.322693 , 486.376892 , 0.343262 , 0.000000 , 4346412, 36.9755 

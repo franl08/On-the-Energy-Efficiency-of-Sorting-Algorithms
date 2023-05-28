@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-C#, selectionsort_100000.sh, 100000, 37.778015 , 7.660950 , 0.025330 , 0.000000 , 73668, 2.63063 
+C#, selectionsort_100000.sh, 100000, 14.993652 , 8.016052 , 0.012573 , 0.000000 , 69224, 0.60954 

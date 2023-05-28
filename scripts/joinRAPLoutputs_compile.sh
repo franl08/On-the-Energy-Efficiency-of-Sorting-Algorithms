@@ -12,7 +12,7 @@ fi
 
 # create the output file and add the header row
 touch "$output_file"
-echo "Language , Program , Input Size , Package , Core(s) , GPU , DRAM? , Time (sec)" >> "$output_file"
+echo "Language , Program , Input Size , Package , Core(s) , GPU , DRAM? , Memory (KB) , Time (sec)" >> "$output_file"
 
 # loop through each directory in the current directory
 for d in compile/*/; do 

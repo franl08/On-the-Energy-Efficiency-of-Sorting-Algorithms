@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-Go, cyclesort_100000.sh, 100000, 8.030762 , 1.747620 , 0.011353 , 0.000000 , 55548, 0.545101 
+Go, cyclesort_100000.sh, 100000, 3.105774 , 1.335144 , 0.017029 , 0.000000 , 56196, 0.150748 
