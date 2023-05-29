@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-Haskell, insertionsort_100000.sh, 100000, 1236.851685 , 651.359619 , 0.394104 , 0.000000 , 2081136, 50.0947 
+Haskell, insertionsort_100000.sh, 100000, 1143.988708 , 473.690613 , 0.437134 , 0.000000 , 2087544, 57.5114 

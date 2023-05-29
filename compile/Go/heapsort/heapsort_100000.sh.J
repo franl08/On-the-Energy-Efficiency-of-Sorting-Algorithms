@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-Go, heapsort_100000.sh, 100000, 3.663025 , 1.878784 , 0.011353 , 0.000000 , 57604, 0.152011 
+Go, heapsort_100000.sh, 100000, 3.205383 , 1.259338 , 0.008423 , 0.000000 , 58132, 0.1661 

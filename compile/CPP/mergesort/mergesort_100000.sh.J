@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-C++, mergesort_100000.sh, 100000, 16.299316 , 8.716125 , 0.013184 , 0.000000 , 116096, 0.660521 
+C++, mergesort_100000.sh, 100000, 15.646973 , 6.574585 , 0.020325 , 0.000000 , 119180, 0.78924 

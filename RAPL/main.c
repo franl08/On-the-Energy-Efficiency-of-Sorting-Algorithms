@@ -11,7 +11,7 @@
 #define RUNTIME
 #define MEMORY_USAGE
 #define MIN_TEMPERATURE 60
-// #define POWERCAP 100
+#define POWERCAP 20
 
 #ifdef POWERCAP
 raplcap powercap() {
@@ -38,9 +38,9 @@ raplcap powercap() {
   }
 
   rl_short.watts = POWERCAP;
-  rl_short.seconds = 1;
+  rl_short.seconds = 0.0;
   rl_long.watts = POWERCAP;
-  rl_long.seconds = 1;
+  rl_long.seconds = 0.0;
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < d; j++) {
       if (raplcap_pd_set_limits(&rc, i, j, RAPLCAP_ZONE_PACKAGE, &rl_long,

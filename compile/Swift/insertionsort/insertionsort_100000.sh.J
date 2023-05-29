@@ -1,2 +1,2 @@
 Language, Program, Input Size, Package, Cores, GPU, DRAM, Memory(KB), Time(sec)
-Swift, insertionsort_100000.sh, 100000, 316.379456 , 162.466919 , 0.145386 , 0.000000 , 366964, 13.2312 
+Swift, insertionsort_100000.sh, 100000, 288.737854 , 119.634827 , 0.136963 , 0.000000 , 378160, 14.5547 
