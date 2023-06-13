@@ -1,8 +1,10 @@
-# TP1-EES
+# On the Energy Efficiency of Sorting Algorithms
+
+We recommend to visit our [https://miguelamm42-sortingalgorithmsbenchmark-home-ans0i8.streamlit.app/](website) in order to analyze our data and get the developed paper.
 
 ## LIST OF ALL LANGUAGES TO STUDY
 
-List contains the part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
+List contains part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html):
 
 - C
 - C++ 
@@ -55,19 +57,3 @@ Generated array with Python script:
 ``` $ bash all.sh ```
 
 CSV files with the results will be generated in the directory `results`.
-
----------------
-
-
-## Energy VS Power (for powercap)
-
-
-- Power (w) - rate(or effort) at which work is done  
-- Energy (J) - ammount of work done
-- Power can change constantly while Energy is the accumulations
-
-- `Energy = Power X Seconds ` 
-
-- `360 000 = 100 x 3,600`
-
-- **NEED TO CHECK VALUE FOR POWERCAP**
