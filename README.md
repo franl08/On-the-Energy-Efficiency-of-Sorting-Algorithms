@@ -2,7 +2,7 @@
 
 We recommend to visit our [website](https://miguelamm42-sortingalgorithmsbenchmark-home-ans0i8.streamlit.app/) in order to analyze our data and get the developed paper.
 
-## LIST OF ALL LANGUAGES TO STUDY
+## Languages
 
 List contains part of the 27 languages from the [*23.02 Benchmarks Game* Study](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html):
 
@@ -17,7 +17,7 @@ List contains part of the 27 languages from the [*23.02 Benchmarks Game* Study](
 
 -----------
 
-## LIST OF ALGORITHMS
+## Algorithms
 
 - BubbleSort;
 - CycleSort;
@@ -30,7 +30,9 @@ List contains part of the 27 languages from the [*23.02 Benchmarks Game* Study](
 
 ----------
 
-## Input Sizes
+## Inputs
+
+Multiple arrays of random integers with different sizes.
 
 - 25 000
 - 50 000
@@ -42,7 +44,9 @@ Generated array with Python script:
 
 ------------
 
-## Results commands
+## Results
+
+To get a CSV with the results, use the following commands:
 
 ### Only algorithms
 
