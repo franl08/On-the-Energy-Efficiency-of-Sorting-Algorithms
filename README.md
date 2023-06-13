@@ -4,7 +4,7 @@ We recommend to visit our [website](https://miguelamm42-sortingalgorithmsbenchma
 
 ## LIST OF ALL LANGUAGES TO STUDY
 
-List contains part of the 27 languages from the *23.02 Benchmarks Game* Study (https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html):
+List contains part of the 27 languages from the [*23.02 Benchmarks Game* Study](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html):
 
 - C
 - C++ 
